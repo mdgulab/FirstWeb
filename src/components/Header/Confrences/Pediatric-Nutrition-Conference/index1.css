@@ -1,0 +1,112 @@
+
+
+
+
+
+/* Overall Wrapper */
+.conference-wrapper {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+/* Header Section */
+.conference-top-header {
+  text-align: center;
+  background-color: #033d6d;
+  padding: 40px 20px;
+  color: rgb(255, 255, 255);
+  border-radius: 10px;
+}
+
+.conference-subtitle {
+  font-size: 24px;
+}
+
+.conference-main-title {
+  font-size: 32px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.conference-highlight-theme {
+  font-size: 18px;
+  margin: 10px 0;
+  color:#7f8081;
+}
+
+.conference-date-location {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+/* Action Buttons */
+.conference-action-buttons {
+  margin-top: 20px;
+}
+
+.conference-btn {
+  margin: 10px;
+  padding: 12px 20px;
+  font-size: 16px;
+  color: white;
+  background-color: #0073e6;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.conference-btn:hover {
+  background-color: #005bb5;
+}
+
+.register-now-btn { background-color: #28a745; }
+.brochure-download-btn { background-color: #6c757d; }
+.abstract-submission-btn { background-color: #ffca2c; }
+.program-btn { background-color: #17a2b8; }
+.organizing-committee-btn { background-color: #dc3545; }
+
+/* Conference Information Section */
+.conference-details-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 30px;
+}
+
+.conference-description {
+  width: 60%;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.conference-about-title {
+  font-size: 22px;
+  color: #333;
+}
+
+.conference-about-paragraph {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #555;
+  margin-top: 15px;
+}
+
+.conference-image {
+  width: 40%;
+  text-align: center;
+}
+
+.conference-banner-img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* FAQ Section */
+.conference-faq-title {
+  font-size: 24px;
+  color: #00467f;
+}
+

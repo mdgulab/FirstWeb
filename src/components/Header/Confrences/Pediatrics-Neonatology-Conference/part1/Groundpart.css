@@ -1,0 +1,59 @@
+/* Global styles */
+.App {
+  font-family: Arial, sans-serif;
+  /* padding: 20px; */
+  background-color: #ffffff;
+}
+
+.main-title {
+  text-align: center;
+  font-size: 24px;
+  /* margin-bottom: 20px; */
+  color: #333;
+}
+
+/* Ground part layout */
+.ground-part {
+  display: flex;
+  justify-content: center;
+  /* gap: 40px; */
+}
+
+.column {
+  width: 40%;
+}
+
+/* Accordion styles */
+.accordion-item {
+  /* margin-bottom: 15px; */
+  /* border-radius: 5px; */
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.accordion-title {
+  width: 100%;
+  text-align: left;
+  /* padding: 15px; */
+  background-color: #ffffff;
+  border-bottom: 1px solid #fffefe;
+  font-size: 16px;
+  color: #020202;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.accordion-title:hover {
+  background-color: #e7e4e4;
+}
+
+.accordion-content {
+  padding: 15px;
+  background-color: #f9f9f9;
+  border: 1px solid #000000;
+  border-top: none;
+  color: #161616;
+  font-size: 14px;
+}

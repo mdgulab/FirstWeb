@@ -1,0 +1,96 @@
+/* Footer container styles */
+.footer {
+  background-color: #1d1d1d;
+  color: #f5f5f5;
+  padding: 20px 10px;
+  text-align: left;
+  font-family: 'Arial', sans-serif;
+  position: relative;
+  width: 100%;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-section {
+  flex: 1;
+  margin: 20px;
+  min-width: 200px;
+}
+
+/* Logo and description */
+.footer-logo img {
+  max-width: 300px;
+  margin-bottom: 5px;
+}
+
+.footer-description {
+  color: #cccccc;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+/* Title for sections */
+.footer-title {
+  color: #ffffff;
+  font-size: 20px;
+  margin-bottom: 15px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Useful links section */
+.footer-links {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li {
+  margin: 10px 0;
+}
+
+.footer-link {
+  color: #cccccc;
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.3s;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.footer-link:hover {
+  color: #ff9800;
+}
+
+/* Contact info section */
+.footer-contact {
+  color: #cccccc;
+  font-size: 14px;
+  line-height: 1.6;
+  /* text-align: center; */
+}
+
+/* Bottom copyright and social links */
+.footer-bottom {
+  margin-top: 10px;
+  border-top: 1px solid #333;
+  padding-top: 10px;
+}
+
+.social-link {
+  color: #ff9800;
+  margin: 0 8px;
+  text-decoration: none;
+  transition: color 0.3s;
+  text-align: center;
+}
+
+.social-link:hover {
+  color: #ffffff;
+}

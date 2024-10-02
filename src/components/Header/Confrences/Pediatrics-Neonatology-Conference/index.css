@@ -1,0 +1,123 @@
+/* ConferencePage.css */
+.conference-page {
+  font-family: Arial, sans-serif;
+  color: #000000;
+  text-align: center;
+  padding: 20px;
+}
+
+.conference-header {
+  background-image: url(https://img.freepik.com/premium-vector/light-blue-white-abstract-modern-banner-background-design-vector-graphic-pattern-template-illustration_249611-3271.jpg?w=826);
+  background-color: #dfdfdf;
+  padding: 20px 20px;
+  border:2px solid #ffd79b;
+  box-shadow: 0px 4px 10px rgba(247, 195, 98, 0.781);
+}
+
+.conference-header h2 {
+  font-size: 22px;
+  color: #777;
+}
+
+.conference-header h1 {
+  font-size: 40px;
+  color: #008cba;
+  margin: 10px 0;
+}
+
+.conference-theme {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.conference-date {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 40px;
+}
+
+.cta-buttons {
+  display: flex;
+  justify-content: center;
+  /* gap: 2px; */
+  flex-wrap: wrap;
+}
+
+.cta-buttons button {
+  padding: 15px 25px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.register-btn {
+  background-color: #4caf50;
+  color: #fff;
+}
+
+.brochure-btn {
+  background-color: #ff5722;
+  color: #fff;
+}
+
+.abstract-btn {
+  background-color: #2196f3;
+  color: #fff;
+}
+
+.program-btn {
+  background-color: #ff9800;
+  color: #fff;
+}
+
+.organizing-btn {
+  background-color: #0d47a1;
+  color: #fff;
+}
+
+.cta-buttons button:hover {
+  opacity: 0.9;
+}
+
+.conference-info {
+  margin-top: 20px;
+  text-align: left;
+  max-width: auto;
+  margin-left: auto;
+  margin-right: auto;
+  display:flex;
+  
+}
+
+.conference-info h3 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.conference-info p {
+  font-size: 18px;
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+.conference-info strong {
+  color: #008cba;
+}
+
+.conference-img {
+  text-align: left;
+  margin-top: 20px;
+  height: auto;
+  max-width:auto;
+  
+}
+
+.conference-img img {
+  max-width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
