@@ -17,6 +17,7 @@ function App() {
   return (
     <Router>
       <Routes>
+        <Route path="/HomePage" element={<HomePage />}></Route>
         <Route path="/Infectious" element={<Infectious />}></Route>
         <Route path="/Emerging" element={<Emerging />}></Route>
         <Route path="/Nutrition" element={<Nutrition />}></Route>
@@ -28,7 +29,7 @@ function App() {
         <Route path="/Venue" element={<Venue />}></Route>
         <Route path="/Header" element={<Header />}></Route>
         <Route path="/accordian" element={<Accordion />}></Route>
-        <Route path="/HomePage" element={<HomePage />}></Route>
+
         <Route index element={<HomePage />}></Route>
       </Routes>
     </Router>

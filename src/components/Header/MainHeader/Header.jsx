@@ -22,9 +22,9 @@ const Header = () => {
           <div className="nav-links">
             <ul className="nav-list">
               <li>
-                <a href="/HomePage" className="nav-link">
+                <Link to="/HomePage" className="nav-link">
                   Home
-                </a>
+                </Link>
               </li>
 
               <li>
@@ -36,19 +36,27 @@ const Header = () => {
                     Conferences
                   </Dropdown.Toggle>
                   <Dropdown.Menu>
-                    <Dropdown.Item href="/ConfrencesPage">
-                      Pediatrics & Neonatology Conference
+                    <Dropdown.Item>
+                      <Link to="/ConfrencesPage" className="nav-link">
+                        Pediatrics & Neonatology Conference
+                      </Link>
                     </Dropdown.Item>
-                    <Dropdown.Item href="/Nutrition">
-                      Pediatric Nutrition Conference
+                    <Dropdown.Item>
+                      <Link to="/Nutrition" className="nav-link">
+                        Pediatric Nutrition Conference
+                      </Link>
                     </Dropdown.Item>
-                    <Dropdown.Item href="/Emerging">
-                      Emerging Issues
+                    <Dropdown.Item>
+                      <Link to="/Emerging" className="nav-link">
+                        Emerging Issues
+                      </Link>
                     </Dropdown.Item>
-                    <Dropdown.Item href="/Infectious">
-                      Pediatric Infectious Diseases Conference
+                    <Dropdown.Item>
+                      <Link to="/Infectious" className="nav-link">
+                        Pediatric Infectious Diseases Conference
+                      </Link>
                     </Dropdown.Item>
-                    <Dropdown.Item href="#">
+                    <Dropdown.Item Link to="#">
                       Pediatric Genomics Conference
                     </Dropdown.Item>
                     <Dropdown.Item href="#">
