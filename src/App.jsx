@@ -21,7 +21,7 @@ function App() {
         <Route path="/Infectious" element={<Infectious />}></Route>
         <Route path="/Emerging" element={<Emerging />}></Route>
         <Route path="/Nutrition" element={<Nutrition />}></Route>
-        <Route path="/ConfrencesPage" element={<ConferencePage />}></Route>
+        <Route path="/ConfrencePage" element={<ConferencePage />}></Route>
         <Route path="/Travelvisa" element={<TravelVisa />}></Route>
         <Route path="/Contact" element={<Contact />}></Route>
         <Route path="/Guideline" element={<Guideline />} />
