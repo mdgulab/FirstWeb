@@ -1,5 +1,4 @@
 // ConferencePage.js
-
 import "./index.css"; // Importing CSS for styles
 import Footer from "../../../Footer/Footer";
 import Header from "../../MainHeader/Header";
@@ -36,21 +35,21 @@ function ConferencePage() {
 
         {/* Conference Info Section */}
         <div className="conference-info">
-          <div>
+          <div className="conference-infoin">
             <h3>About Pediatrics Neonatology Conference</h3>
-            <p>
+            <p className="conference-about-p">
               The Pediatrics and Neonatology Conference 2025 will take place in
               Zurich, Switzerland, on June 16–17, 2025. As the main emphasis on
               “Advancing Global Health for Children and Newborns”
             </p>
-            <p>
+            <p className="conference-about-p">
               Scholars, practitioners, and students are invited to attend the
               2025 Pediatrics Neonatology Conference. To stay up updated on the
               latest developments in pediatrics, attend keynote public
               appearances lectures, and networking events. You may collaborate
               globally and grow your career with Stripe Conferences.
             </p>
-            <p>
+            <p className="conference-about-p">
               Research presented in London, UK in 2025 at the Pediatrics
               Neonatology Conference. Engage in dialogue with leading
               authorities, academics, and students to explore future
@@ -59,8 +58,9 @@ function ConferencePage() {
               Conferences. Visit us in London, UK on August 25–26, 2025.
             </p>
           </div>
-          <div className="conference-img">
+          <div>
             <img
+              className="conference-img"
               src="https://pediatricsmeets.com/wp-content/uploads/2024/09/Pediatrics-2025-1400x700.png"
               alt="Conference Banner"
             />

@@ -4,6 +4,9 @@ import Header from "../../MainHeader/Header";
 import FAQS from "../Pediatrics-Neonatology-Conference/FAQS";
 import Location from "../Pediatrics-Neonatology-Conference/location";
 import Part2 from "../Pediatrics-Neonatology-Conference/part2";
+import Second2 from "./second2";
+import Second3 from "./second3";
+import MediaPartners from "./second4";
 function Nutrition() {
   return (
     <div>
@@ -12,9 +15,9 @@ function Nutrition() {
         {/* Conference Header */}
         <header className="conference-top-header">
           <h2 className="conference-subtitle">International Conference on</h2>
-          <h1 className="conference-main-title">
+          <h2 className="conference-main-title">
             Pediatrics Nutrition and Food Security
-          </h1>
+          </h2>
           <p className="conference-highlight-theme">
             Theme: Fueling the Future: Optimizing Pediatric Nutrition for a
             Healthier World
@@ -24,22 +27,12 @@ function Nutrition() {
           </p>
 
           {/* Call to Action Buttons */}
-          <div className="conference-action-buttons">
-            <button className="conference-btn register-now-btn">
-              Go to Register Now
-            </button>
-            <button className="conference-btn brochure-download-btn">
-              Brochure Download
-            </button>
-            <button className="conference-btn abstract-submission-btn">
-              Abstract Submission
-            </button>
-            <button className="conference-btn program-btn">
-              Tentative Program
-            </button>
-            <button className="conference-btn organizing-committee-btn">
-              Organizing Committee
-            </button>
+          <div className="cta-buttons">
+            <button className="register-btn">Go to Register Now</button>
+            <button className="brochure-btn">Brochure Download</button>
+            <button className="abstract-btn">Abstract Submission</button>
+            <button className="program-btn">Tentative Program</button>
+            <button className="organizing-btn">Organizing Committee</button>
           </div>
         </header>
 
@@ -89,7 +82,13 @@ function Nutrition() {
       </div>
       <br />
       <center>
+        <h2>Pediatric Nutrition Conference Scientific Sessions</h2>
+        <Second2 />
         <Part2 />
+        <h2>Recommended Global Pediatrics Conferences </h2>
+        <Second3 />
+        <MediaPartners />
+
         <Location />
         <h4 className="conference-faq-title">FAQS</h4>
         <FAQS />

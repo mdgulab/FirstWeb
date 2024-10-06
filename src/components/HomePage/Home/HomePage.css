@@ -305,7 +305,7 @@ align-items: center;
 
   @keyframes marquee {
     0% {
-      transform: translateX(100%); /* Start from right side */
+      transform: translateX(0); /* Start from right side */
     }
     100% {
       transform: translateX(-100%); /* Move all the way to the left */

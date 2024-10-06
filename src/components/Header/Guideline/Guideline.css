@@ -2,7 +2,6 @@
   font-family: 'Arial', sans-serif;
   background-color: #f8f8f8;
   color: #333;
-  /* padding: 5px; */
 }
 
 .back-img {
@@ -56,15 +55,57 @@ li {
 }
 
 @media (max-width: 768px) {
+  .back-img {
+    padding: 40px 15px;
+  }
+
   .speaker-heading {
     font-size: 2em;
   }
 
   .heading2 {
-    font-size: 1.5em;
+    font-size: 1.6em;
+  }
+
+  .heading3 {
+    font-size: 1.3em;
+  }
+
+  .guideline-content {
+    padding: 15px;
+  }
+
+  ul {
+    padding-left: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .back-img {
+    padding: 30px 10px;
+  }
+
+  .speaker-heading {
+    font-size: 1.8em;
+  }
+
+  .heading2 {
+    font-size: 1.4em;
   }
 
   .heading3 {
     font-size: 1.2em;
+  }
+
+  .guideline-content {
+    padding: 10px;
+  }
+
+  ul {
+    padding-left: 10px;
+  }
+
+  li {
+    margin: 8px 0;
   }
 }

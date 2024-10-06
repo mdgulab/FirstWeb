@@ -1,4 +1,4 @@
-/* ConferencePage.css */
+/* Base styles */
 .conference-page {
   font-family: Arial, sans-serif;
   color: #000000;
@@ -8,10 +8,6 @@
 
 .conference-header {
   background-image: url(https://img.freepik.com/premium-vector/light-blue-white-abstract-modern-banner-background-design-vector-graphic-pattern-template-illustration_249611-3271.jpg?w=826);
-  background-color: #dfdfdf;
-  padding: 20px 20px;
-  border:2px solid #ffd79b;
-  box-shadow: 0px 4px 10px rgba(247, 195, 98, 0.781);
 }
 
 .conference-header h2 {
@@ -37,60 +33,49 @@
   margin-bottom: 40px;
 }
 
+/* Call-to-action buttons */
 .cta-buttons {
   display: flex;
   justify-content: center;
-  /* gap: 2px; */
+  gap: 10px;
   flex-wrap: wrap;
+  padding-bottom: 10px;
 }
 
 .cta-buttons button {
-  padding: 15px 25px;
+  padding: 15px;
   border: none;
   border-radius: 5px;
   font-size: 16px;
   cursor: pointer;
-  margin: 10px;
+  margin: 5px;
   transition: background-color 0.3s ease;
-}
-
-.register-btn {
-  background-color: #4caf50;
-  color: #fff;
-}
-
-.brochure-btn {
-  background-color: #ff5722;
-  color: #fff;
-}
-
-.abstract-btn {
-  background-color: #2196f3;
-  color: #fff;
-}
-
-.program-btn {
-  background-color: #ff9800;
-  color: #fff;
-}
-
-.organizing-btn {
-  background-color: #0d47a1;
-  color: #fff;
 }
 
 .cta-buttons button:hover {
   opacity: 0.9;
 }
 
+/* Individual button styles */
+.register-btn { background-color: #4caf50; color: #fff; }
+.brochure-btn { background-color: #ff5722; color: #fff; }
+.abstract-btn { background-color: #2196f3; color: #fff; }
+.program-btn { background-color: #ff9800; color: #fff; }
+.organizing-btn { background-color: #0d47a1; color: #fff; }
+
+/* Conference Info */
 .conference-info {
+  display: flex;
   margin-top: 20px;
-  text-align: left;
-  max-width: auto;
-  margin-left: auto;
-  margin-right: auto;
-  display:flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
   
+}
+
+.conference-infoin {
+  text-align: justify;
+  width: 45%;
 }
 
 .conference-info h3 {
@@ -99,7 +84,7 @@
 }
 
 .conference-info p {
-  font-size: 18px;
+  font-size: 16px;
   margin-bottom: 15px;
   line-height: 1.6;
 }
@@ -109,15 +94,90 @@
 }
 
 .conference-img {
-  text-align: left;
-  margin-top: 20px;
-  height: auto;
-  max-width:auto;
-  
+  padding-top: 20px;
+  margin: 10px;
+  width: 35%;
+  /* border-radius: 0rem 0rem 0rem 0rem; */
+  border: 4px solid rgb(204, 204, 204);
 }
 
 .conference-img img {
-  max-width: 100%;
+  
   border-radius: 8px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.conference-about-p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #555;
+  margin-top: 15px;
+}
+
+/* Media Queries for Responsiveness */
+
+/* Small devices (max-width: 600px) */
+@media (max-width: 600px) {
+  .conference-header h1 {
+    font-size: 28px;
+  }
+
+  .conference-header h2 {
+    font-size: 18px;
+  }
+
+  .cta-buttons button {
+    width: 100%;
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .conference-info h3 {
+    font-size: 22px;
+  }
+
+  .conference-info p {
+    font-size: 16px;
+  }
+
+  .conference-img {
+    width: 100%;
+  }
+}
+
+/* Medium devices (max-width: 768px) */
+@media (max-width: 768px) {
+  .conference-header h1 {
+    font-size: 32px;
+  }
+
+  .cta-buttons button {
+    font-size: 14px;
+    padding: 12px;
+  }
+
+  .conference-info {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .conference-infoin {
+    width: 100%;
+  }
+}
+
+/* Large devices (max-width: 992px) */
+@media (max-width: 992px) {
+  .conference-header h1 {
+    font-size: 36px;
+  }
+
+  .cta-buttons button {
+    font-size: 15px;
+    padding: 14px;
+  }
+
+  .conference-img {
+    width: 90%;
+  }
 }

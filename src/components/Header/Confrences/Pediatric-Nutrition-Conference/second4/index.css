@@ -1,0 +1,81 @@
+.MediaPartnersContainer {
+  overflow: hidden; /* Hide overflow */
+  position: relative; /* Required for absolute positioning of the scrolling effect */
+  width: 85%; /* Full width */
+  margin: 0 auto; /* Center the container */
+}
+
+.MediaPartnersList {
+  display: flex; /* Display items in a row */
+  animation: scroll 15s linear infinite; /* Set up animation */
+  align-items: center; /* Center the logos vertically */
+}
+
+.MediaPartnerItem {
+  display: flex;
+  align-items: center;
+  margin-right: 20px; /* Space between partners */
+}
+
+.MediaPartnerLogo {
+  width: 240px; /* Adjust logo width */
+  height: auto; /* Maintain aspect ratio */
+  margin-right: 10px; /* Space between logo and text */
+  border: 1px solid black;
+  margin: 10px;
+  padding: 10px;
+}
+
+.MediaPartnerText {
+  font-size: 18px; /* Font size for partner names */
+  color: #333; /* Color for partner names */
+}
+
+/* Scrolling animation */
+@keyframes scroll {
+  0% {
+    transform: translateX(0); /* Start at the original position */
+  }
+  100% {
+    transform: translateX(-100%); /* Move to the left by the full width of the items */
+  }
+}
+
+/* Optional: Hide scrollbar for better aesthetics */
+.MediaPartnersList::-webkit-scrollbar {
+  display: none; /* Hide scrollbar */
+}
+
+/* Responsive Styling for Tablets */
+@media (max-width: 768px) {
+  .MediaPartnerLogo {
+    width: 100px; /* Reduce logo size */
+    padding: 5px;
+    margin: 5px;
+  }
+
+  .MediaPartnerText {
+    font-size: 16px; /* Adjust font size */
+  }
+}
+
+/* Responsive Styling for Mobile Phones */
+@media (max-width: 480px) {
+  .MediaPartnerLogo {
+    width: 70px; /* Further reduce logo size for smaller screens */
+    margin: 2px;
+    padding: 2px;
+  }
+
+  .MediaPartnerText {
+    font-size: 14px; /* Smaller font size */
+  }
+
+  .MediaPartnersContainer {
+    width: 80%; /* Full width for small screens */
+  }
+
+  .MediaPartnerItem {
+    margin-right:5px; /* Reduce spacing between items */
+  }
+}

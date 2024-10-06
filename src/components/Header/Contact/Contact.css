@@ -1,11 +1,13 @@
+/* General styling for contact container */
 .contact-container1 {
   position: relative;
   text-align: center;
   padding: 50px;
-  color: rgb(255, 255, 255);
+  color: #fff;
   overflow: hidden; /* Ensures the pseudo-element stays within the container */
-  border: 1px solid rgb(0, 0, 0);
+  border: 1px solid #000;
 }
+
 .contH2 {
   color: rgb(231, 134, 6);
 }
@@ -21,26 +23,26 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  /* Apply blur effect */
   filter: blur(2px);
-  /* filter: brightness(-2) ;You can increase the blur by changing the value */
   z-index: -1; /* Ensures the background stays behind the content */
 }
 
 /* Ensure the content is above the blurred background */
-.para, .contact-info {
+.para,
+.contact-info {
   position: relative;
   z-index: 1;
-  color: rgb(255, 255, 255);
-  /* background-color:rgba(0, 0, 0, 0.062) */
+  color: #fff;
 }
-.head2{
+
+.head2 {
   color: rgb(255, 180, 67);
 }
 
 /* Optional: Styling for contact items */
 .contact-info {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   gap: 30px;
 }
@@ -52,8 +54,7 @@
   width: 300px;
   text-align: center;
   color: white;
-  border:1px dotted rgb(198, 204, 206);    
-  /* box-shadow:2px 5px 8px #8fa2b6; */
+  border: 1px dotted rgb(198, 204, 206);
 }
 
 .contact-item .icon {
@@ -64,31 +65,27 @@
 .heade3 {
   font-size: 20px;
   color: rgb(245, 176, 74);
-  /* background-color: rgba(0, 0, 0, 0.486); */
 }
 
+/* Flexbox for navclass */
 .navclass {
-
   display: flex;
-  /* flex-wrap: wrap; */
-  /* align-items: center; */
+  flex-wrap: wrap;
   justify-content: center;
-  justify-items: center;
-  /* justify-content: space-around; */
-  gap:2%;
+  gap: 2%;
   margin: 10px;
-  /* border: 1px solid rgb(214, 214, 214); */
-              
 }
 
+/* Map container */
 .map-container {
   position: relative;
-  
   padding: 30px;
   text-align: center;
   border: 1px solid rgb(214, 214, 214);
+  max-width: 40%;
 }
 
+/* Contact form styling */
 .contact-form {
   position: relative;
   flex: 1;
@@ -142,7 +139,7 @@
 /* Map container styling */
 .map-container {
   flex: 1;
-  max-width:40%;
+  max-width: 40%;
   padding: 20px;
   background-color: #f9f9f9;
   border-radius: 10px;
@@ -159,10 +156,33 @@
 @media (max-width: 768px) {
   .navclass {
     flex-direction: column;
-    
-  }
-  .map-container{
-    width: 500px;
   }
 
+  .map-container {
+    width: 100%;
+    max-width: none;
+    margin-bottom: 20px;
+  }
+
+  .contact-form {
+    max-width: 100%;
+  }
+}
+
+/* For very small devices (max-width: 600px) */
+@media (max-width: 600px) {
+  .contact-info {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .contact-item {
+    width: 100%;
+  }
+
+  .map-container,
+  .contact-form {
+    width: 100%;
+    margin: 0 auto;
+  }
 }

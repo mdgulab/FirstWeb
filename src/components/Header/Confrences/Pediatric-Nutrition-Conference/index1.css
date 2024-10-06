@@ -1,70 +1,82 @@
-
-
-
-
-
 /* Overall Wrapper */
 .conference-wrapper {
   font-family: Arial, sans-serif;
+  background-color: #ffffff;
   padding: 20px;
-  background-color: #f9f9f9;
 }
 
 /* Header Section */
 .conference-top-header {
   text-align: center;
-  background-color: #033d6d;
-  padding: 40px 20px;
-  color: rgb(255, 255, 255);
-  border-radius: 10px;
+  color: rgb(0, 0, 0);
+  background-image: url(https://img.freepik.com/premium-vector/light-blue-white-abstract-modern-banner-background-design-vector-graphic-pattern-template-illustration_249611-3271.jpg?w=826);
+  padding: 20px;
 }
 
 .conference-subtitle {
-  font-size: 24px;
+  font-size: 22px;
+  color: #777;
 }
 
 .conference-main-title {
-  font-size: 32px;
-  font-weight: bold;
+  font-size: 40px;
+  color: #008cba;
   margin: 10px 0;
 }
 
 .conference-highlight-theme {
   font-size: 18px;
-  margin: 10px 0;
-  color:#7f8081;
+  font-weight: 500;
+  margin-bottom: 10px;
 }
 
 .conference-date-location {
   font-size: 16px;
-  margin-bottom: 20px;
+  color: #555;
+  margin-bottom: 40px;
 }
 
 /* Action Buttons */
 .conference-action-buttons {
-  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  padding-bottom: 20px;
 }
 
 .conference-btn {
-  margin: 10px;
-  padding: 12px 20px;
-  font-size: 16px;
-  color: white;
-  background-color: #0073e6;
+  padding: 15px;
   border: none;
   border-radius: 5px;
+  font-size: 16px;
   cursor: pointer;
+  margin: 5px;
 }
 
 .conference-btn:hover {
-  background-color: #005bb5;
+  background-color: #f10000;
 }
 
-.register-now-btn { background-color: #28a745; }
-.brochure-download-btn { background-color: #6c757d; }
-.abstract-submission-btn { background-color: #ffca2c; }
-.program-btn { background-color: #17a2b8; }
-.organizing-committee-btn { background-color: #dc3545; }
+.register-now-btn {
+  background-color: #28a745;
+}
+
+.brochure-download-btn {
+  background-color: #98cfff;
+}
+
+.abstract-submission-btn {
+  background-color: #ffca2c;
+}
+
+.program-btn {
+  background-color: #17a2b8;
+}
+
+.organizing-committee-btn {
+  background-color: #dc3545;
+}
 
 /* Conference Information Section */
 .conference-details-section {
@@ -72,6 +84,7 @@
   justify-content: space-between;
   align-items: flex-start;
   margin-top: 30px;
+  gap: 20px;
 }
 
 .conference-description {
@@ -102,6 +115,9 @@
 .conference-banner-img {
   width: 100%;
   border-radius: 10px;
+  border: 1px solid rgb(202, 202, 202);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 2rem 2rem 2rem 0rem;
 }
 
 /* FAQ Section */
@@ -110,3 +126,87 @@
   color: #00467f;
 }
 
+/* Responsive Design */
+
+/* Tablets and small laptops */
+@media (max-width: 992px) {
+  .conference-main-title {
+    font-size: 34px;
+  }
+
+  .conference-highlight-theme {
+    font-size: 16px;
+  }
+
+  .conference-date-location {
+    font-size: 14px;
+  }
+
+  .conference-description {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .conference-details-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .conference-image {
+    width: 100%;
+  }
+
+  .conference-btn {
+    padding: 12px;
+    font-size: 14px;
+  }
+}
+
+/* Mobile Devices */
+@media (max-width: 576px) {
+  .conference-main-title {
+    font-size: 28px;
+  }
+
+  .conference-highlight-theme {
+    font-size: 14px;
+  }
+
+  .conference-date-location {
+    font-size: 12px;
+    margin-bottom: 20px;
+  }
+
+  .conference-btn {
+    font-size: 12px;
+    padding: 10px;
+  }
+
+  .conference-details-section {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+
+  .conference-image {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .conference-banner-img {
+    width: 100%;
+    border-radius: 10px;
+  }
+
+  .conference-about-title {
+    font-size: 18px;
+  }
+
+  .conference-about-paragraph {
+    font-size: 14px;
+  }
+
+  .conference-faq-title {
+    font-size: 20px;
+  }
+}

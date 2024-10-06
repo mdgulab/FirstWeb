@@ -1,32 +1,32 @@
 /* Global styles */
 .App {
   font-family: Arial, sans-serif;
-  /* padding: 20px; */
   background-color: #ffffff;
+  padding: 20px;
 }
 
 .main-title {
   text-align: center;
   font-size: 24px;
-  /* margin-bottom: 20px; */
   color: #333;
+  margin-bottom: 20px;
 }
 
 /* Ground part layout */
 .ground-part {
   display: flex;
   justify-content: center;
-  /* gap: 40px; */
+  gap: 20px;
+  flex-wrap: wrap; /* Allows the columns to wrap on smaller screens */
 }
 
 .column {
   width: 40%;
 }
 
-/* Accordion styles */
 .accordion-item {
-  /* margin-bottom: 15px; */
-  /* border-radius: 5px; */
+  margin-bottom: 15px;
+  border-radius: 5px;
   overflow: hidden;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
@@ -34,7 +34,7 @@
 .accordion-title {
   width: 100%;
   text-align: left;
-  /* padding: 15px; */
+  padding: 15px;
   background-color: #ffffff;
   border-bottom: 1px solid #fffefe;
   font-size: 16px;
@@ -56,4 +56,71 @@
   border-top: none;
   color: #161616;
   font-size: 14px;
+}
+
+/* Media Queries for Responsiveness */
+
+/* Small devices (max-width: 600px) */
+@media (max-width: 600px) {
+  .main-title {
+    font-size: 20px;
+  }
+
+  .ground-part {
+    flex-direction: column;
+  }
+
+  .column {
+    width: 80%; /* Full width on smaller screens */
+  }
+
+  .accordion-title {
+    font-size: 14px;
+  }
+
+  .accordion-content {
+    font-size: 12px;
+  }
+}
+
+/* Medium devices (max-width: 768px) */
+@media (max-width: 768px) {
+  .main-title {
+    font-size: 22px;
+  }
+
+  .column {
+    width: 80%; /* Columns stack on medium screens */
+  }
+
+  .accordion-title {
+    font-size: 15px;
+  }
+
+  .accordion-content {
+    font-size: 13px;
+  }
+}
+
+/* Large devices (max-width: 992px) */
+@media (max-width: 992px) {
+  .main-title {
+    font-size: 24px;
+  }
+
+  .ground-part {
+    gap: 20px;
+  }
+
+  .column {
+    width: 80%; /* Adjusts column width on larger screens */
+  }
+
+  .accordion-title {
+    font-size: 16px;
+  }
+
+  .accordion-content {
+    font-size: 14px;
+  }
 }
