@@ -3,10 +3,10 @@ import Footer from "../../../Footer/Footer";
 import Header from "../../MainHeader/Header";
 import FAQS from "../Pediatrics-Neonatology-Conference/FAQS";
 import Location from "../Pediatrics-Neonatology-Conference/location";
-import Part2 from "../Pediatrics-Neonatology-Conference/part2";
-import Second2 from "./second2";
-import Second3 from "./second3";
-import MediaPartners from "./second4";
+import WelcomeMessage from "../Pediatrics-Neonatology-Conference/WelcomeMessage";
+import Second2 from "./LeftRightElement";
+import MediaPartners from "./mediaPartner";
+import Recommended from "./Recommended-conf";
 function Nutrition() {
   return (
     <div>
@@ -84,9 +84,9 @@ function Nutrition() {
       <center>
         <h2>Pediatric Nutrition Conference Scientific Sessions</h2>
         <Second2 />
-        <Part2 />
+        <WelcomeMessage />
         <h2>Recommended Global Pediatrics Conferences </h2>
-        <Second3 />
+        <Recommended />
         <MediaPartners />
 
         <Location />

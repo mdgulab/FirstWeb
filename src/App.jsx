@@ -13,6 +13,8 @@ import Footer from "./components/Footer/Footer.jsx";
 import Nutrition from "./components/Header/Confrences/Pediatric-Nutrition-Conference/index.jsx";
 import Emerging from "./components/Header/Confrences/Emerging-Issues/index.jsx";
 import Infectious from "./components/Header/Confrences/Pediatric-Infectious-Diseases-Conference/index.jsx";
+import Genomics from "./components/Header/Confrences/Pediatric-Genomics-Conference/index.jsx";
+import Devlopment from "./components/Header/Confrences/Neonatal-Development-Conference/index.jsx";
 function App() {
   return (
     <Router>
@@ -29,6 +31,8 @@ function App() {
         <Route path="/Venue" element={<Venue />}></Route>
         <Route path="/Header" element={<Header />}></Route>
         <Route path="/accordian" element={<Accordion />}></Route>
+        <Route path="/Genomics" element={<Genomics />}></Route>
+        <Route path="/Devlopment" element={<Devlopment />}></Route>
 
         <Route index element={<HomePage />}></Route>
       </Routes>

@@ -1,0 +1,84 @@
+/* Main wrapper for the scientific session */
+.scientific-session-wrapper {
+  padding: 20px;
+}
+
+/* Main container for the session lists */
+.scientific-session-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #f9f9f9;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+/* Left and Right sections */
+.scientific-session-left, .scientific-session-right {
+  width: 45%;
+}
+
+/* Individual session items */
+.scientific-session-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.scientific-session-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* Icon styling within each session item */
+.session-icon {
+  margin-right: 10px;
+  font-size: 24px;
+  color: #007BFF;
+}
+
+/* Session title styling */
+.session-title {
+  font-size: 18px;
+  font-weight: 500;
+  color: #333;
+}
+
+/* Button container for the bottom button */
+.scientific-button-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+/* Button styling */
+.view-all-sessions-button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.view-all-sessions-button:hover {
+  background-color: #0056b3;
+}
+
+/* Title styling */
+.scientific-title {
+  color: #0056b3;
+}
+
+/* Description styling */
+.scientific-description {
+  margin-top: 10px;
+}

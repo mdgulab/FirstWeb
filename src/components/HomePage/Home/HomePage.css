@@ -1,20 +1,19 @@
-/* General styling */
+/* General Styling */
 body {
-  margin: 0;
+  margin: 10px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
 .homepage {
   width: 100%;
-  /* padding-top: 100px; */
 }
-.HomeP1{
-  text-align: justify;
-}
+
 /* Hero Section */
 .hero {
   position: relative;
-  height:40vh;
+  height: 40vh;
 }
+
 .hero-image {
   width: 100%;
   height: 110%;
@@ -23,62 +22,64 @@ body {
 }
 
 .overlay {
-  margin-top:3%;
+  margin-top: 3%;
   background-color: #070707a6;
-  border: 1px solid #f0f0f0; 
-  box-shadow:2px 5px 8px #4b4b4b;
-  border-radius:10px;
-  box-shadow: #007bff;
-  height:100%px;
+  border: 1px solid #f0f0f0;
+  box-shadow: 2px 5px 8px #4b4b4b;
+  border-radius: 10px;
   width: 70%;
   position: absolute;
   top: 35%;
-  left: 50%; 
+  left: 50%;
   transform: translate(-50%, -50%);
-  color: rgb(255, 255, 255);
-  text-align: center; 
+  color: white;
+  text-align: center;
 }
+
 .overlay h2 {
+  color: #f2602b;
   font-size: 3rem;
   margin: 1rem;
 }
+
 .overlay p {
+  color: #ebebeb;
   font-size: 1.1rem;
   margin-top: 2rem;
   margin-bottom: 2rem;
 }
+
 .btn-primary {
   padding: 1rem;
   background-color: #ff6347;
   color: white;
   border: none;
-  border-radius:10px;
+  border-radius: 10px;
   text-transform: uppercase;
   font-weight: bold;
   text-decoration: none;
   cursor: pointer;
 }
+
 .btn-primary:hover {
   background-color: #e03f04;
 }
+
 /* About Section */
 .about-section {
   display: flex;
   align-items: center;
-  padding-top:5%;
+  padding-top: 5%;
   gap: 5%;
   box-shadow: 2px 2px 3px black;
   padding-left: 5%;
   padding-right: 1%;
-  
 }
 
 .about-text {
   flex: 1;
   background-color: #ffffff;
-  
   text-align: left;
-  
 }
 
 .about-text h2 {
@@ -89,229 +90,51 @@ body {
 .about-image {
   flex: 1;
   padding-bottom: 2%;
-
 }
 
 .about-img {
-  width:80%;
-  height:21rem;
-  border: 2px solid rgb(207, 207, 207); 
-  border-radius: 2rem 1rem 4rem 1rem; 
+  width: 80%;
+  height: 21rem;
+  border: 2px solid rgb(207, 207, 207);
+  border-radius: 2rem 1rem 4rem 1rem;
   box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.336);
 }
 
+.HomeP1 {
+  text-align: justify;
+}
+
 /* Conference Cards Section */
-.conference-cards-section {
-  padding: 20px 0;
-  background-color: #ffffff;
-  
- 
-}
 
-.section-title {
-  text-align: center;
-  font-size: 2rem;
-  margin-bottom: 1%;
-  border: 1px dotted rgb(224, 224, 224); 
-  
-}
+/* Organizing Committee Section */
 
-
-
-.conference-cards2 {
-display: flex;
-justify-content: center;
-align-items: center;
-flex-wrap: wrap;
-  /* padding: 10px; */
-  margin-top: 0px;
-  gap:5%;
-}
-
-.conference-card2{
-  background-color: rgb(92, 92, 92);
-  color:#ffffff;
-  width:29%;
-  height: auto;
-  text-align: center;
-  transition: transform 0.3s, box-shadow 0.3s;
-  border: 2px solid rgb(255, 255, 255); 
-  border-radius: 1rem 1rem 1rem 1rem; 
-  box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.274);
-}
-
-.conference-cards {
+/* Why Attend Section */
+.attend {
   display: flex;
-  justify-content: space-around;
-  flex-direction: row;
-  /* flex-wrap: nowrap; */
-  gap: 5%;
-  /* padding: 10px; */
-  text-align: justify;
-  white-space: inherit;
-  overflow: hidden;
-  animation: marquee 20s linear infinite; /* Controls the speed of the scroll */
-
-}
-
-.conference-card {
-  background-color: white;
-  /* border-radius: 10px;*/ 
-  border: 2px solid rgb(207, 207, 207); 
-  border-radius: 2rem 1rem 3rem 1rem; 
-  box-shadow: 2px 4px 8px rgba(197, 252, 247, 0.274);
-  width:500px;
-  text-align: center;
-  /* margin-right: 20px; */
-  padding: 5px;
-  /* margin: 20px; */
-  transition: transform 0.3s, box-shadow 0.3s;
-}
-
-
-.conference-card:hover {
-  transform: scale(1.05);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-}
-.conference-card2:hover {
-  transform: scale(1.05);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-}
-
-.conference-image {
-  width: 100%;
-  border-radius: 10px;
-  margin-bottom: 15px;
-}
-.img1 {
-  width:60%;
-
-  border: 1px solid rgb(153, 153, 153); 
-  border-radius: 1rem 1rem 1rem 1rem; 
-  box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.274);
-}
-.conferenceImg1{
-  width:40%;
-  margin-top: 2%;
-  border: 1px solid rgb(153, 153, 153); 
-  border-radius: 1rem 1rem 1rem 1rem; 
-  box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.274);
-}
-.conference-card h3 {
-  font-size: 1.3rem;
-  margin-bottom: 10px;
-}
-
-.conference-card p {
-  font-size: 0.9rem;
-  margin: 5px 0;
-}
-
-.btn-secondary {
-  padding: 10px 20px;
-  background-color: #007bff;
-  color: white;
-  border-radius: 5px;
-  text-decoration: none;
-  display: inline-block;
-  margin-top: 15px;
-  cursor: pointer;
-  text-transform: uppercase;
-  font-weight: bold;
-}
-.bt1 {
-  padding: 10px 20px;
-  background-color: #1150ff;
-  color: white;
-  border-radius: 5px;
-  text-decoration: none;
-  display: inline-block;
-  margin-top: 15px;
-  margin-bottom: 10px;
-  cursor: pointer;
-  text-transform: uppercase;
-  font-weight: bold;
-}
-.btn-secondary:hover {
-  background-color: #0056b3;
-}
-.welcome-message{
-display: flex;
-text-align: center;
-background-color: #ebebeb;
-height:auto;
-width: auto;
-padding: 10px;
-border: 5px solid rgb(207, 207, 207); 
-border-radius: 2rem 1rem 7rem 1rem; 
-}
-.pg{
-  
-  margin: 20px;
-  text-align: justify;
-  width:100%;
-  height:50%;
-  /* background-color: rgb(255, 254, 254); */
-  color:rgb(0, 0, 0);
-  /* border: 7px solid rgb(207, 207, 207); 
-  border-radius: 2rem 1rem 5rem 1rem;  */
-}
-.conference-card3{
-  padding:20px;
-  margin: 20px;
-  background-color: rgb(255, 255, 255);
-  width: 30%;
-  text-align: center;
-  /* transition: transform 0.3s, box-shadow 0.3s; */
-  border: 2px solid rgb(207, 207, 207); 
-  border-radius: 2rem 1rem 4rem 1rem; 
-  box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.336); 
-}
- .attend{
- display: flex;
- justify-content: center;
-align-items: center;
+  justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
-  /* padding: 10px; */
-  padding:2%;
-  gap:5%;
+  gap: 5%;
+  padding: 2%;
+}
 
-  }
-  .card4{
-    background-color: rgb(255, 255, 255);
-    color: #000000;
-    text-align: center;
-    /* border-radius: 60px; */
-    /* text-align: center; */
-    transition: transform 0.3s, box-shadow 0.3s;
-    border: 1px solid black;
-   width: 27%;
-   padding: 10px;
-    /* border-radius: 2rem 1rem 4rem 1rem;  */
-    /* box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.336);  */
-  }
-  .Media-partners{
-    display: flex;
-    margin-left: 10px;
-  }
+.card4 {
+  background-color: #ffffff;
+  color: #000000;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+  border: 1px solid black;
+  width: 27%;
+  padding: 10px;
+}
 
-  .Media-partners {
-    display: flex;
-    gap: 20px; /* Optional: Adds space between logos */
-    white-space: nowrap;
-    overflow: hidden;
-    animation: marquee 20s linear infinite; /* Controls the speed of the scroll */
-  }
+/* Icons */
+.icons {
+  width: 25%;
+  margin: 10%;
+}
 
-  @keyframes marquee {
-    0% {
-      transform: translateX(0); /* Start from right side */
-    }
-    100% {
-      transform: translateX(-100%); /* Move all the way to the left */
-    }
-  }
-  /* src/components/Accordion.css */
+/* Frequently Asked Questions (FAQs) */
 .accordion {
   width: 100%;
   max-width: 800px;
@@ -319,9 +142,11 @@ align-items: center;
   border: 1px solid #ddd;
   border-radius: 5px;
 }
+
 .accordion-item {
   border-bottom: 1px solid #ddd;
 }
+
 .accordion-title {
   display: flex;
   justify-content: space-between;
@@ -351,47 +176,118 @@ align-items: center;
   font-size: 1.5rem;
 }
 
-.linerGread {
-  position: relative;
-  margin:3%;
-  bottom:50px;
-
-}
-.Liner1{
-  margin:10px ;
-  position: relative;
-  left: 10px;
-  right: 10%;
-  bottom: 10px; /* Adjust based on the desired distance from the text */
-  height: 3px; /* Thickness of the underline */
-  background: linear-gradient(90deg, rgb(255, 69, 69), rgb(10, 0, 153));
+/* Other Styling */
+.welcome-message {
+  display: flex;
+  text-align: center;
+  background-color: #ebebeb;
+  padding: 10px;
+  border: 5px solid rgb(207, 207, 207);
+  border-radius: 2rem 1rem 7rem 1rem;
 }
 
-/* Class for gradient underline */
 .gradient-underline {
   position: relative;
   display: inline-block;
-  padding-bottom: 5px; /* Adds space between text and underline */
+  padding-bottom: 5px;
 }
 
 .gradient-underline::after {
   content: "";
   position: absolute;
-  left:50%;
-   /* Centers the line under the text */
-  transform: translateX(-50%); /* Moves the line's starting point to the center */
-  bottom: 0; /* Adjusts the vertical position of the line */
-  width: 100%; /* Make the underline 60% of the text width */
-  height: 4px; /* Thickness of the underline */
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+  width: 100%;
+  height: 4px;
   background: linear-gradient(90deg, orange, purple);
-  z-index: -1; /* Ensures it's behind the text */
+  z-index: -1;
 }
-.icons{
-    width:25%;
-    margin: 10%;
+/* Media Partners */  
+  @media (max-width: 1024px) {
+    .about-section {
+      flex-direction: column;
+    }
   
+    .about-img {
+      width: 80%;
+      height: auto;
+    }
+  
+     .conference-card2 {
+      width: 45%;
+    }
+  
+    .card4 {
+      width: 45%;
+    }
+  
+    .welcome-message {
+      flex-direction: column;
+    }
+  
+  @media (max-width: 768px) {
+    .hero {
+      height: auto;
+    }
+  
+    .overlay h2 {
+      font-size: 2.5rem;
+    }
+  
+    .about-section {
+      flex-direction: column;
+      padding-left: 3%;
+      padding-right: 3%;
+    }
+  
+    .conference-card2 {
+      max-width:2000px;
+    }
+  
+    .about-img, .img1, .conferenceImg1 {
+      width: 100%;
+      height: auto;
+    }
+  
+    .icons {
+      width: 50%;
+    }
     
-    /* border: 1px solid rgb(153, 153, 153);  */
-    border-radius: 2rem 2rem 2rem 2rem; 
-    /* box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.274); */
   }
+  
+  
+    .hero {
+      height: 40vh;
+      margin-bottom: 20px;
+    }
+  .overlay{
+    margin-top: 45px;
+    width: 320px;
+    
+  }
+    .overlay h2 {
+      font-size: 1.8rem;
+    }
+  
+    .about-text h2 {
+      font-size: 1.5rem;
+    }
+  
+    .section-title {
+      font-size: 1.5rem;
+    }
+  
+    .btn-primary {
+      padding: 0.5rem 1rem;
+    }
+  
+    .icons {
+      width: 100%;
+    }
+  
+    .welcome-message {
+      padding: 5%;
+    }
+  }
+}

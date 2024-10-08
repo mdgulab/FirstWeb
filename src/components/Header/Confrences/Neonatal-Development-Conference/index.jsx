@@ -2,57 +2,57 @@ import "./index.css"; // Importing the new CSS file
 import Footer from "../../../Footer/Footer";
 import Header from "../../MainHeader/Header";
 import ScientificSession from "./Scientific-Session";
-// import Second2 from "../Pediatric-Nutrition-Conference/second2";
+
 import WelcomeMessage from "../Pediatrics-Neonatology-Conference/WelcomeMessage";
 import MediaPartners from "../Pediatric-Nutrition-Conference/mediaPartner";
 import Recommended from "../Pediatric-Nutrition-Conference/Recommended-conf";
 import Location3 from "./Location3";
 
-function Infectious() {
+function Devlopment() {
   return (
     <div>
       <Header />
-      <div className="conference-container">
+      <div className="infectious-container">
         {/* Conference Header */}
-        <header className="conference-header-wrapper">
-          <h2 className="conference-subheading">International Conference on</h2>
-          <h1 className="conference-main-title">
+        <header className="infectious-header-wrapper">
+          <h2 className="infectious-subheading">International Conference on</h2>
+          <h1 className="infectious-main-title">
             Global Perspectives in Pediatric Infectious Diseases
           </h1>
-          <p className="conference-theme-statement">
+          <p className="infectious-theme-statement">
             Theme: Integrating Global Strategies for Better Child Health.
           </p>
-          <p className="conference-dates-location">
+          <p className="infectious-dates-location">
             September 15-16, 2025 | Rome, Italy
           </p>
 
           {/* Call to Action Buttons */}
-          <div className="conference-action-buttons">
-            <button className="conference-btn register-now-btn">
+          <div className="infectious-action-buttons">
+            <button className="infectious-btn infectious-register-now-btn">
               Go to Register Now
             </button>
-            <button className="conference-btn download-brochure-btn">
+            <button className="infectious-btn infectious-download-brochure-btn">
               Brochure Download
             </button>
-            <button className="conference-btn submit-abstract-btn">
+            <button className="infectious-btn infectious-submit-abstract-btn">
               Abstract Submission
             </button>
-            <button className="conference-btn tentative-program-btn">
+            <button className="infectious-btn infectious-tentative-program-btn">
               Tentative Program
             </button>
-            <button className="conference-btn organizing-committee-btn">
+            <button className="infectious-btn infectious-organizing-committee-btn">
               Organizing Committee
             </button>
           </div>
         </header>
 
         {/* Conference Info Section */}
-        <div className="conference-details-section">
-          <div className="conference-description">
-            <h3 className="conference-about-title">
+        <div className="infectious-details-section">
+          <div className="infectious-description">
+            <h3 className="infectious-about-title">
               About Pediatric Infectious Diseases Conference
             </h3>
-            <p className="conference-about-text">
+            <p className="infectious-about-text">
               Join the Congress on Global Perspectives on Pediatric Infectious
               Diseases Conference in Rome, Italy, September 15–16, 2025.
               Attending could include professionals, researchers, and students.
@@ -63,15 +63,15 @@ function Infectious() {
               disorders in children is a topic issue is scheduled to be debated
               at the Pediatric Infectious diseases Conference in 2025.
             </p>
-            <p className="conference-about-text">
+            <p className="infectious-about-text">
               Explore Barcelona’s cutting edge of pediatric and neonatology
               research. With Stripe Conferences, grow your network and advance
-              your career. Come hang with us August 11–12, 2025.Anyone concerned
-              in the treatment, investigation, or formulation of policy
-              pertaining to infectious disorders in children should not miss the
-              Pediatric Infectious disorders Conference.
+              your career. Come hang with us August 11–12, 2025. Anyone
+              concerned in the treatment, investigation, or formulation of
+              policy pertaining to infectious disorders in children should not
+              miss the Pediatric Infectious disorders Conference.
             </p>
-            <p className="conference-about-text">
+            <p className="infectious-about-text">
               Infectious Diseases Congress 2025 gathers pediatric infectious
               disease specialists, pediatricians, epidemiologists,
               microbiologists, and healthcare professionals from around the
@@ -80,18 +80,20 @@ function Infectious() {
               diseases.
             </p>
           </div>
-          <div className="conference-banner-wrapper">
+          <div className="infectious-banner-wrapper">
             <img
               src="https://pediatricsmeets.com/wp-content/uploads/2024/07/WhatsApp-Image-2024-05-13-at-6.27.09-PM-3-1179x800.jpeg"
               alt="Conference Banner"
-              className="conference-banner-image"
+              className="infectious-banner-image"
             />
           </div>
         </div>
       </div>
       <ScientificSession />
       <WelcomeMessage />
-      <h4 className="faq-title">Recommended Global Pediatrics Conferences</h4>
+      <h4 className="infectious-faq-title">
+        Recommended Global Pediatrics Conferences
+      </h4>
       <Recommended />
       <MediaPartners />
       <Location3 />
@@ -100,4 +102,4 @@ function Infectious() {
   );
 }
 
-export default Infectious;
+export default Devlopment;

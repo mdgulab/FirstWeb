@@ -1,7 +1,12 @@
 import "./index.css"; // Importing updated CSS for styles
 import Footer from "../../../Footer/Footer";
 import Header from "../../MainHeader/Header";
-import Part2 from "../Pediatrics-Neonatology-Conference/part2";
+import WelcomeMessage from "../Pediatrics-Neonatology-Conference/WelcomeMessage";
+import Seientific from "./Scientific-Session";
+import MediaPartners from "../Pediatric-Nutrition-Conference/mediaPartner";
+
+import Location2 from "./Location";
+import Recommended from "../Pediatric-Nutrition-Conference/Recommended-conf";
 
 function Emerging() {
   return (
@@ -25,20 +30,18 @@ function Emerging() {
           </p>
 
           {/* Call to Action Buttons */}
-          <div className="conference-buttons-wrapper">
-            <button className="conference-btn register-button">
-              Go to Register Now
-            </button>
-            <button className="conference-btn download-brochure-button">
+          <div className="conference-btn1">
+            <button className="register-button">Go to Register Now</button>
+            <button className="download-brochure-button">
               Brochure Download
             </button>
-            <button className="conference-btn submit-abstract-button">
+            <button className=" submit-abstract-button">
               Abstract Submission
             </button>
-            <button className="conference-btn tentative-program-button">
+            <button className="tentative-program-button">
               Tentative Program
             </button>
-            <button className="conference-btn organizing-committee-button">
+            <button className="organizing-committee-button">
               Organizing Committee
             </button>
           </div>
@@ -83,13 +86,14 @@ function Emerging() {
         </div>
 
         {/* FAQ Section */}
-        <div className="conference-faq-section">
-          <center>
-            <h4 className="faq-title">FAQS</h4>
-          </center>
-        </div>
+        <div className="conference-faq-section"></div>
       </div>
-      <Part2 />
+      <Seientific />
+      <WelcomeMessage />
+      <h4 className="faq-title">Recommended Global Pediatrics Conferences</h4>
+      <Recommended />
+      <MediaPartners />
+      <Location2 />
       <Footer />
     </div>
   );

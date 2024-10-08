@@ -1,0 +1,96 @@
+/* General layout */
+.travel-app {
+  font-family: Arial, sans-serif;
+  background-color: #f1f1f1;
+  padding-top: 20px;
+}
+
+.travel-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 10px;
+  flex-wrap: wrap; /* Allows sections to wrap on smaller screens */
+}
+
+.travel-info-box {
+  width: 65%;
+  background-color: #fff;
+  padding: 10px;
+  box-shadow: 0 2px 10px rgba(238, 255, 141, 0.863);
+  border-radius: 5px;
+}
+
+.travel-section-heading {
+  background-color: #00467f;
+  color: white;
+  padding: 10px;
+  border-radius: 5px 5px 0 0;
+  margin-bottom: 15px;
+  font-size: 20px;
+}
+
+.travel-info-content {
+  color: #333;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.travel-map-box {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fffefe;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 1px 10px rgba(245, 243, 127, 0.438);
+}
+
+/* Media Queries for Responsiveness */
+
+/* Small devices (max-width: 600px) */
+@media (max-width: 600px) {
+  .travel-container {
+    flex-direction: column;
+  }
+
+  .travel-info-box, .travel-map-box {
+    width: 100%; /* Full width for both sections */
+    margin-bottom: 20px; /* Space between stacked sections */
+  }
+
+  .travel-section-heading {
+    font-size: 18px;
+  }
+
+  .travel-info-content {
+    font-size: 14px;
+  }
+}
+
+/* Medium devices (max-width: 768px) */
+@media (max-width: 768px) {
+  .travel-info-box {
+    width: 65%;
+  }
+
+  .travel-map-box {
+    width: 100%; /* Map section takes full width */
+  }
+
+  .travel-info-content {
+    font-size: 15px;
+  }
+}
+
+/* Large devices (max-width: 992px) */
+@media (max-width: 992px) {
+  .travel-info-box {
+    width: 100%;
+  }
+
+  .travel-map-box {
+    width: 100%;
+  }
+}

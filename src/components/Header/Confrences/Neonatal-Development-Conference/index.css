@@ -1,48 +1,48 @@
 /* Main Conference Container */
-.conference-container {
+.infectious-container {
   font-family: Arial, sans-serif;
   color: #000000;
   text-align: center;
   padding: 20px;
 }
 
-.conference-header-wrapper {
+.infectious-header-wrapper {
   background-image: url(https://img.freepik.com/premium-vector/light-blue-white-abstract-modern-banner-background-design-vector-graphic-pattern-template-illustration_249611-3271.jpg?w=826);
 }
 
 /* Header Styles */
-.conference-subheading {
+.infectious-subheading {
   font-size: 22px;
   color: #777;
 }
 
-.conference-main-title {
+.infectious-main-title {
   font-size: 40px;
   color: #008cba;
   margin: 10px 0;
 }
 
-.conference-theme-statement {
+.infectious-theme-statement {
   font-size: 18px;
   font-weight: 500;
   margin-bottom: 10px;
 }
 
-.conference-dates-location {
+.infectious-dates-location {
   font-size: 16px;
   color: #555;
   margin-bottom: 40px;
 }
 
 /* Conference Action Buttons */
-.conference-action-buttons {
+.infectious-action-buttons {
   display: flex;
   justify-content: center;
   gap: 15px;
   flex-wrap: wrap;
 }
 
-.conference-btn {
+.infectious-btn {
   padding: 12px 20px;
   font-size: 16px;
   color: white;
@@ -53,39 +53,39 @@
   transition: background-color 0.3s;
 }
 
-.conference-btn:hover {
+.infectious-btn:hover {
   background-color: #003d80;
 }
 
-.register-now-btn {
+.infectious-register-now-btn {
   background-color: #28a745;
 }
 
-.download-brochure-btn {
+.infectious-download-brochure-btn {
   background-color: #6c757d;
 }
 
-.submit-abstract-btn {
+.infectious-submit-abstract-btn {
   background-color: #ffc107;
 }
 
-.tentative-program-btn {
+.infectious-tentative-program-btn {
   background-color: #17a2b8;
 }
 
-.organizing-committee-btn {
+.infectious-organizing-committee-btn {
   background-color: #dc3545;
 }
 
 /* Conference Details Section */
-.conference-details-section {
+.infectious-details-section {
   display: flex;
   justify-content: space-between;
   margin-top: 50px;
   flex-wrap: wrap; /* Allow wrapping for small screens */
 }
 
-.conference-description {
+.infectious-description {
   width: 58%;
   background-color: white;
   padding: 30px;
@@ -93,35 +93,34 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.conference-about-title {
+.infectious-about-title {
   font-size: 24px;
   margin-bottom: 20px;
 }
 
-.conference-about-text {
-  text-align: justify;
+.infectious-about-text {
   font-size: 16px;
   color: #555;
   line-height: 1.7;
   margin-bottom: 20px;
 }
 
-.conference-banner-wrapper {
+.infectious-banner-wrapper {
   width: 40%;
 }
 
-.conference-banner-image {
+.infectious-banner-image {
   width: 100%;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 /* FAQ Section */
-.conference-faq-section {
+.infectious-faq-section {
   margin-top: 60px;
 }
 
-.conference-faq-title {
+.infectious-faq-title {
   font-size: 22px;
   color: #084298;
 }
@@ -130,61 +129,60 @@
 
 /* Medium devices (max-width: 992px) */
 @media (max-width: 992px) {
-  .conference-details-section {
+  .infectious-details-section {
     flex-direction: column; /* Stack sections vertically */
     align-items: center; /* Center align items */
-    
   }
 
-  .conference-description {
+  .infectious-description {
     width: 100%; /* Full width for the description */
     margin-bottom: 20px; /* Add space below the description */
   }
 
-  .conference-banner-wrapper {
+  .infectious-banner-wrapper {
     width: 100%; /* Full width for the banner */
   }
 }
 
 /* Small devices (max-width: 768px) */
 @media (max-width: 768px) {
-  .conference-main-title {
+  .infectious-main-title {
     font-size: 30px; /* Adjust main title size */
   }
 
-  .conference-theme-statement {
+  .infectious-theme-statement {
     font-size: 16px; /* Adjust theme statement size */
   }
 
-  .conference-dates-location {
+  .infectious-dates-location {
     font-size: 14px; /* Adjust dates/location size */
   }
 
-  .conference-btn {
+  .infectious-btn {
     font-size: 14px; /* Adjust button font size */
     padding: 10px 16px; /* Adjust button padding */
   }
 
-  .conference-about-title {
+  .infectious-about-title {
     font-size: 20px; /* Adjust about title size */
   }
 
-  .conference-about-text {
+  .infectious-about-text {
     font-size: 14px; /* Adjust about text size */
   }
 }
 
 /* Extra small devices (max-width: 576px) */
 @media (max-width: 576px) {
-  .conference-main-title {
+  .infectious-main-title {
     font-size: 24px; /* Further reduce title size */
   }
 
-  .conference-subheading {
+  .infectious-subheading {
     font-size: 18px; /* Adjust subheading size */
   }
 
-  .conference-faq-title {
+  .infectious-faq-title {
     font-size: 20px; /* Adjust FAQ title size */
   }
 }

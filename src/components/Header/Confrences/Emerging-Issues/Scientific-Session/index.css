@@ -1,0 +1,105 @@
+/* Main container for the session lists */
+.session-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #f9f9f9;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+/* Left and Right sections */
+.session-left, .session-right {
+  width: 45%;
+}
+
+/* Individual session items */
+.session-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.session-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* Icon styling within each session item */
+.session-item span:first-child {
+  margin-right: 10px;
+  font-size: 24px;
+  color: #007BFF;
+}
+
+/* Session title styling */
+.session-title {
+  font-size: 18px;
+  font-weight: 500;
+  color: #333;
+}
+
+/* Button container for the bottom button */
+.button-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+/* Button styling */
+.view-all-button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.view-all-button:hover {
+  background-color: #0056b3;
+}
+.Titlehead{
+text-align: center;
+color: #0056b3;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  .session-left, .session-right {
+    width: 48%;
+  }
+}
+
+@media (max-width: 768px) {
+  .session-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .session-left, .session-right {
+    width: 100%;
+  }
+
+  .session-item {
+    width: 90%;
+    margin: 10px 0;
+  }
+
+  .button-container {
+    margin-top: 30px; /* Extra margin for spacing */
+  }
+
+  .view-all-button {
+    width: 80%; /* Button width for mobile */
+    font-size: 18px; /* Slightly larger font for easier tap */
+  }
+}

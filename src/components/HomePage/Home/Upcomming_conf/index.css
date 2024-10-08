@@ -1,0 +1,127 @@
+.conference-cards-section {
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.conference-cards {
+  display: flex;
+  justify-content: space-around;
+  gap: 2%;
+  overflow: hidden;
+  animation: marquee 15s linear infinite;
+}
+
+/* Card Styles */
+.conference-card {
+  background-color: white;
+  border: 2px solid rgb(207, 207, 207);
+  border-radius: 10px;
+  box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2);
+  width: 300px; /* Adjust as needed */
+  padding: 15px;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+
+.conference-image {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.upcoming-card-title {
+  font-size: 1.5rem;
+  margin: 10px 0;
+}
+
+.btn-secondary {
+  padding: 10px 15px;
+  background-color: #007bff;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 15px;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.btn-secondary:hover {
+  background-color: #0056b3;
+}
+
+/* Marquee styles */
+.marquee{
+  overflow: hidden; /* Hide anything that goes outside the container */
+  white-space: nowrap; /* Prevent line breaks */
+  width: 100%; /* Full width */
+  background: #f0f0f0; /* Background color */
+  position: relative; /* Position relative for absolute positioning of marquee content */
+  padding: 10px; /* Padding for visual appeal */
+}
+@keyframes marquee{
+  0% {
+    transform: translateX(0); /* Start off to the right of the container */
+  }
+  100% {
+    transform: translateX(-100%); /* Move to the left of the container */
+  }
+}
+
+.marquee-content {
+  color: rgb(8, 99, 0);
+
+  display: inline-block; /* Make the content inline */
+  animation: marquee1 9s linear infinite; /* Use the marquee animation */
+  white-space: nowrap; /* Prevent line breaks within the marquee */
+}
+
+/* Define the marquee animation */
+@keyframes marquee1 {
+  0% {
+    transform: translateX(0); /* Start off to the right of the container */
+  }
+  100% {
+    transform: translateX(-100%); /* Move to the left of the container */
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .conference-card{
+    width: 100%; /* 1 card per row on extra small screens */
+  }
+  .conference-cards{
+    max-width: fit-content;
+  }
+}
+
+@media (max-width: 480px) {
+  .conference-card{
+    width: 100%; /* 1 card per row on extra small screens */
+  }
+  .conference-cards{
+    max-width: fit-content;
+  }
+}
+@media (max-width: 576px) {
+
+  .conference-card{
+    width: 100%; /* 1 card per row on extra small screens */
+  }
+  .conference-cards{
+    position:relative;
+    gap: 10px;
+    padding:20px;
+    margin: 20px;
+    width: 500px;
+    height: 500px;
+  }
+}

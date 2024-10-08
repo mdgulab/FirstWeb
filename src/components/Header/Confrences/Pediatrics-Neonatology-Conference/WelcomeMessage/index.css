@@ -1,0 +1,124 @@
+/* General styles */
+.welcome-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px;
+}
+
+.speaker-card {
+  text-align: center;
+  background-color: #f8f8f8;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 200px;
+}
+
+.speaker-img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.speaker-name {
+  font-size: 20px;
+  color: #00467f;
+  margin: 10px 0;
+}
+
+.speaker-title {
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.btn-read-more {
+  background-color: #008cba;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-read-more:hover {
+  background-color: #007aa3;
+}
+
+.welcome-message-container {
+  max-width: 1050px;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.welcome-title {
+  font-size: 24px;
+  color: #00467f;
+  margin-bottom: 20px;
+}
+
+.welcome-text {
+  font-size: 16px;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Responsive design */
+
+/* For devices up to 600px */
+@media (max-width: 600px) {
+  .welcome-section {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .speaker-card {
+    align-items: center;
+    width: 350px;
+    padding: 10px;
+  }
+
+  .welcome-message-container {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .speaker-name {
+    font-size: 18px;
+  }
+
+  .welcome-title {
+    font-size: 20px;
+  }
+
+  .welcome-text {
+    font-size: 14px;
+  }
+}
+
+/* For devices between 600px and 992px */
+@media (min-width: 600px) and (max-width: 992px) {
+  .welcome-section {
+    justify-content: space-around;
+  }
+
+  .speaker-card{
+    width:200px;
+  }
+  .welcome-message-container {
+    width: 48%;
+  }
+
+  .speaker-name {
+    font-size: 18px;
+  }
+
+  .welcome-title {
+    font-size: 22px;
+  }
+}
