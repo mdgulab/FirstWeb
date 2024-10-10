@@ -7,6 +7,7 @@ import WelcomeMessage from "../Pediatrics-Neonatology-Conference/WelcomeMessage"
 import Second2 from "./LeftRightElement";
 import MediaPartners from "./mediaPartner";
 import Recommended from "./Recommended-conf";
+import { Link } from "react-router-dom";
 function Nutrition() {
   return (
     <div>
@@ -28,11 +29,25 @@ function Nutrition() {
 
           {/* Call to Action Buttons */}
           <div className="cta-buttons">
-            <button className="register-btn">Go to Register Now</button>
-            <button className="brochure-btn">Brochure Download</button>
+            <Link to="/ContactForm">
+              <button className="register-btn">Go to Register Now</button>
+            </Link>
+            <Link to="/AbstractTemplate">
+              <button className="brochure-btn">Brochure Download</button>
+            </Link>
+
             <button className="abstract-btn">Abstract Submission</button>
-            <button className="program-btn">Tentative Program</button>
-            <button className="organizing-btn">Organizing Committee</button>
+
+            <a
+              href="/Pediatrics-and-Neonatology-pdf.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <button className="program-btn">Tentative Program</button>
+            </a>
+            <Link to="/Org">
+              <button className="organizing-btn">Organizing Committee</button>
+            </Link>
           </div>
         </header>
 

@@ -102,18 +102,12 @@ const Header = () => {
                   </NavLink>
                 </li>
                 <li>
-                  <NavLink
-                    className="dropdown-nav"
-                    to="/biodiversity-conference"
-                  >
+                  <NavLink className="dropdown-nav" to="/Genomics">
                     Pediatric Genomics Conference
                   </NavLink>
                 </li>
                 <li>
-                  <NavLink
-                    className="dropdown-nav"
-                    to="/biodiversity-conference"
-                  >
+                  <NavLink className="dropdown-nav" to="/Devlopment">
                     Neonatal Development Conference
                   </NavLink>
                 </li>
@@ -163,7 +157,7 @@ const Header = () => {
         </ul>
         <div className="nav-register-button">
           <Link to="/register">
-            <button>Register</button>
+            <button className="button-2">Register</button>
           </Link>
         </div>
       </div>

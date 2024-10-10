@@ -15,6 +15,9 @@ import Emerging from "./components/Header/Confrences/Emerging-Issues/index.jsx";
 import Infectious from "./components/Header/Confrences/Pediatric-Infectious-Diseases-Conference/index.jsx";
 import Genomics from "./components/Header/Confrences/Pediatric-Genomics-Conference/index.jsx";
 import Devlopment from "./components/Header/Confrences/Neonatal-Development-Conference/index.jsx";
+import ContactForm from "./components/All-Button/Heading-Button/Confrences_button/Neonatology/index.jsx";
+import AbstractTemplate from "./components/All-Button/Heading-Button/Confrences_button/Neonatology/Abstarct/index.jsx";
+import Org from "./components/All-Button/Heading-Button/Confrences_button/Organizing Committee/index.jsx";
 function App() {
   return (
     <Router>
@@ -33,7 +36,9 @@ function App() {
         <Route path="/accordian" element={<Accordion />}></Route>
         <Route path="/Genomics" element={<Genomics />}></Route>
         <Route path="/Devlopment" element={<Devlopment />}></Route>
-
+        <Route path="/ContactForm" element={<ContactForm />}></Route>
+        <Route path="/AbstractTemplate" element={<AbstractTemplate />}></Route>
+        <Route path="/Org" element={<Org />}></Route>
         <Route index element={<HomePage />}></Route>
       </Routes>
     </Router>

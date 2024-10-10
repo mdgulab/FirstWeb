@@ -1,7 +1,11 @@
 import React from "react";
-import "./index.css"; // Import the CSS file
+import { Swiper, SwiperSlide, useSwiper } from "swiper/react";
+import "swiper/css";
+import "./index.css";
+import { sliderSettings } from "./UpcommingData.jsx";
 
-const UpcomingConferences = () => {
+import { Link } from "react-router-dom";
+function index() {
   const conferences = [
     {
       title: "Pediatrics and Neonatology",
@@ -39,41 +43,50 @@ const UpcomingConferences = () => {
   ];
 
   return (
-    <section className="conference-cards-section">
-      <h2 className="section-title">Upcoming Conferences 2025</h2>
-
-      {/* Marquee for announcements or highlights */}
-      <div className="marquee">
-        <div className="marquee-content">
-          Exciting news! Upcoming Pediatric Conferences! Don't miss them! | Join
-          us for insightful sessions and networking opportunities! | Register
-          now for early bird pricing!
+    <section className="r-wrapper">
+      <div className="paddings innerWidth r-container">
+        <div className="r-head flexColStart">
+          <span className="pprimaryText">Upcoming Conferences</span>
         </div>
-      </div>
+        <Swiper {...sliderSettings}>
+          <SliderButtons />
+          {conferences.map((card, i) => (
+            <SwiperSlide key={i}>
+              <div className="flexColStart r-card">
+                <img
+                  className="card-img"
+                  src={card.image}
+                  height="160"
+                  alt="error"
+                />
 
-      <div className="conference-cards">
-        {conferences.map((conference, index) => (
-          <div className="conference-card" key={index}>
-            <img
-              src={conference.image}
-              alt={conference.title}
-              className="conference-image"
-            />
-            <h3 className="upcoming-card-title">{conference.title}</h3>
-            <p>
-              <i className="fa fa-calendar"></i> {conference.date}
-            </p>
-            <p>
-              <i className="fa fa-map-marker"></i> {conference.location}
-            </p>
-            <a href="#" className="btn-secondary">
-              Register Now
-            </a>
-          </div>
-        ))}
+                <span className="secondaryText r-price">{card.date}</span>
+
+                <span style={{ color: "rgb(250, 126, 2)" }}>{card.title}</span>
+                <span className="primaryText-2">{card.location}</span>
+
+                <div className="flexCenter registerButton">
+                  <Link to="/register-now/">
+                    <button className="button-2 card-btn-2222">
+                      Register Now
+                    </button>
+                  </Link>
+                </div>
+              </div>
+            </SwiperSlide>
+          ))}
+        </Swiper>
       </div>
     </section>
   );
+}
+export default index;
+const SliderButtons = () => {
+  const swiper = useSwiper();
+  return (
+    <div className="flexCenter r-button">
+      <button onClick={() => swiper.slidePrev()}>&lt;</button>
+      <button onClick={() => swiper.slideNext()}>&gt;</button>
+    </div>
+  );
 };
-
-export default UpcomingConferences;

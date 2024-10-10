@@ -50,5 +50,4 @@ function Second2() {
     </div>
   );
 }
-
 export default Second2;

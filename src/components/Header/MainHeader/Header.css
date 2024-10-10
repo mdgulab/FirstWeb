@@ -71,14 +71,17 @@ body {
 }
 
 .active-link {
-  color: #ffffff !important;
+  color: #b10000 !important;
   font-weight: bold;
-  background-color: #246cf3;
+  border-radius: 1px;
+  border:1px red solid;
+  /* background-color: #246cf3; */
+    /* text-decoration: line-through; */
   height: 3rem;
   top: 0;
   left: 0;
-  border-bottom-right-radius: 50%;
-  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 10%;
+  border-bottom-left-radius: 10%;
 }
 
 .navbar .dropdown-nav:hover {

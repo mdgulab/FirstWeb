@@ -1,0 +1,108 @@
+/* index.css */
+
+/* General Page Wrapper */
+.conference-page-wrapper {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+}
+
+/* Conference Header Section */
+.conference-header-section {
+  text-align: center;
+  background-color: #4a90e2;
+  color: white;
+  padding: 40px 20px;
+}
+
+.conference-header-subtitle {
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.conference-header-title {
+  font-size: 36px;
+  font-weight: 700;
+  margin-top: 10px;
+}
+
+.conference-theme-highlight {
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+.conference-schedule-info {
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 20px;
+}
+
+/* Call to Action Buttons */
+.conference-btn1 {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.conference-btn1 button {
+  background-color: #ff6b6b;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.conference-btn1 button:hover {
+  background-color: #ff4f4f;
+}
+
+/* Conference Info Section */
+.conference-info-section {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+.conference-details-content {
+  width: 60%;
+}
+
+.conference-info-title {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.conference-info-text {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.conference-banner-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* FAQ Section */
+.faq-title {
+  text-align: center;
+  font-size: 24px;
+  margin: 40px 0;
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+footer p {
+  margin: 0;
+}

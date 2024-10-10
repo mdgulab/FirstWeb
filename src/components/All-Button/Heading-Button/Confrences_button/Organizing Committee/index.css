@@ -1,0 +1,21 @@
+.Orgcommittee{
+  position: relative;
+  height:20rem;
+  background-image: url('https://img.pikbest.com/backgrounds/20200324/medical-technology-simple-banner-background_2754595.jpg!sw800');
+  background-size: cover;
+  background-position: center;
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  padding-bottom: 20px;
+}
+.OrgHeading{
+color:rgb(11, 11, 160);
+font-size: 30px;
+font-weight: bold;
+text-align: center;
+background-color: rgba(225, 230, 254, 0.209);
+padding: 40px;
+
+}
