@@ -20,7 +20,7 @@ body {
 }
 
 .logo img {
-  width: 6.5rem;
+  width: 8rem;
   height: auto;
   margin-left: 3rem;
   margin-top: 0.5rem;
@@ -247,7 +247,7 @@ body {
   }
 
   .logo img {
-      width: 6rem;
+      width: 8rem;
       margin-left: -22rem;
       align-items: left;
       margin-top: 1.3rem;

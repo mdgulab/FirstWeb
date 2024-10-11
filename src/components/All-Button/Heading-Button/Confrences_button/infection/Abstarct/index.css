@@ -1,0 +1,174 @@
+/* Hero Section */
+.abstract-template-hero-container {
+  position: relative;
+  height: 20rem;
+  background-image: url('https://img.pikbest.com/backgrounds/20200324/medical-technology-simple-banner-background_2754595.jpg!sw800');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+.abstract-template-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  text-align: center;
+}
+
+.abstract-template-text-container {
+  max-width: auto;
+  text-align: center;
+}
+
+.abstract-template-heading {
+  text-align: center;
+  color: #007bff;
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.abstract-template-subheading {
+  text-align: center;
+  font-size: 20px;
+  padding-bottom: 20px;
+}
+
+.abstract-template-subheading-secondary {
+  font-size: 26px;
+  margin-bottom: 20px;
+}
+
+.abstract-template-download-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  color: white;
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.abstract-template-download-button:hover {
+  background-color: #0056b3;
+}
+
+/* Main Content */
+.abstract-template-main-content {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: 2rem 8rem;
+  background-color: #f9f9f9;
+  flex-wrap: wrap;
+}
+
+/* Form Section */
+.abstract-template-form-container {
+  flex: 1;
+  max-width: 500px;
+  margin-bottom: 20px;
+}
+
+.abstract-template-form {
+  background-color: rgb(244, 244, 244);
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.abstract-template-label {
+  display: block;
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.abstract-template-input,
+.abstract-template-select {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+
+.abstract-template-input[type="file"] {
+  padding: 10px;
+}
+
+.abstract-template-button {
+  width: 100%;
+  padding: 15px;
+  font-size: 18px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.abstract-template-button:hover {
+  background-color: #0056b3;
+}
+
+/* Forum Section */
+.abstract-template-forum-section {
+  flex: 1;
+  max-width: 700px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.abstract-template-forum-heading {
+  font-size: 28px;
+  color: #007bff;
+  margin-bottom: 20px;
+}
+
+.abstract-template-forum-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+}
+
+.abstract-template-forum-card {
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+}
+
+.abstract-template-icon {
+  font-size: 40px;
+  color: #007bff;
+  margin-bottom: 10px;
+}
+
+.abstract-template-forum-name {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.abstract-template-publications-link {
+  margin-top: 20px;
+  font-size: 18px;
+  color: #007bff;
+  text-decoration: underline;
+  display: inline-block;
+}
+
+.abstract-template-publications-link:hover {
+  color: #0056b3;
+}

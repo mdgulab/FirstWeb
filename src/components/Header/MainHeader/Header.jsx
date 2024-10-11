@@ -69,14 +69,14 @@ const Header = () => {
                 cursor: "pointer",
               }}
             >
-              <NavLink
+              {/* <NavLink
                 to="/upcoming-event"
                 className={({ isActive }) =>
                   isActive ? "nav active-link" : "nav"
                 }
-              >
-                Upcoming Conference
-              </NavLink>
+              > */}
+              Upcoming Conference
+              {/* </NavLink> */}
               <ArrowDropDownIcon />
             </div>
             {(isDropdownOpen || window.innerWidth > 768) && (

@@ -15,9 +15,17 @@ import Emerging from "./components/Header/Confrences/Emerging-Issues/index.jsx";
 import Infectious from "./components/Header/Confrences/Pediatric-Infectious-Diseases-Conference/index.jsx";
 import Genomics from "./components/Header/Confrences/Pediatric-Genomics-Conference/index.jsx";
 import Devlopment from "./components/Header/Confrences/Neonatal-Development-Conference/index.jsx";
-import ContactForm from "./components/All-Button/Heading-Button/Confrences_button/Neonatology/index.jsx";
+import ContactForm from "./components/All-Button/Heading-Button/Confrences_button/devlopment/download/index.jsx";
 import AbstractTemplate from "./components/All-Button/Heading-Button/Confrences_button/Neonatology/Abstarct/index.jsx";
 import Org from "./components/All-Button/Heading-Button/Confrences_button/Organizing Committee/index.jsx";
+import NutritionAbstractTemplate from "./components/All-Button/Heading-Button/Confrences_button/Nutrititon/Abstarct/index.jsx";
+import NutritionContactForm from "./components/All-Button/Heading-Button/Confrences_button/Nutrititon/download/index.jsx";
+import InfectionAbstractTemplate from "./components/All-Button/Heading-Button/Confrences_button/infection/Abstarct/index.jsx";
+import InfectionContactForm from "./components/All-Button/Heading-Button/Confrences_button/infection/download/index.jsx";
+import GenomicAbstractTemplate from "./components/All-Button/Heading-Button/Confrences_button/Genomic/Abstarct/index.jsx";
+import GenomicContactForm from "./components/All-Button/Heading-Button/Confrences_button/Genomic/download/index.jsx";
+import DevlopmentAbstractTemplate from "./components/All-Button/Heading-Button/Confrences_button/devlopment/Abstarct/index.jsx";
+import DevlopmentBrochure from "./components/All-Button/Heading-Button/Confrences_button/devlopment/download/index.jsx";
 function App() {
   return (
     <Router>
@@ -38,7 +46,39 @@ function App() {
         <Route path="/Devlopment" element={<Devlopment />}></Route>
         <Route path="/ContactForm" element={<ContactForm />}></Route>
         <Route path="/AbstractTemplate" element={<AbstractTemplate />}></Route>
+        <Route
+          path="/NutritionContactForm"
+          element={<NutritionContactForm />}
+        ></Route>
         <Route path="/Org" element={<Org />}></Route>
+        <Route
+          path="/NutritionAbstractTemplate"
+          element={<NutritionAbstractTemplate />}
+        ></Route>
+        <Route
+          path="/InfectionAbstractTemplate"
+          element={<InfectionAbstractTemplate />}
+        ></Route>
+        <Route
+          path="/InfectionContactForm"
+          element={<InfectionContactForm />}
+        ></Route>
+        <Route
+          path="/GenomicAbstractTemplate"
+          element={<GenomicAbstractTemplate />}
+        ></Route>
+        <Route
+          path="/GenomicContactForm"
+          element={<GenomicContactForm />}
+        ></Route>
+        <Route
+          path="/DevlopmentAbstractTemplate"
+          element={<DevlopmentAbstractTemplate />}
+        ></Route>
+        <Route
+          path="/DevlopmentBrochure"
+          element={<DevlopmentBrochure />}
+        ></Route>
         <Route index element={<HomePage />}></Route>
       </Routes>
     </Router>

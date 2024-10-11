@@ -92,13 +92,22 @@
 .conference-info strong {
   color: #008cba;
 }
+.NeonatologyMainimage{
+  width: auto;
+  position:absolute;
+  padding-left: 35%;
+  padding-top: 3%;
+
+  /* display:; */
+  
+}
 
 .conference-img {
   padding-top: 20px;
   margin: 10px;
-  width: 35%;
+  width: 70%;
   /* border-radius: 0rem 0rem 0rem 0rem; */
-  border: 4px solid rgb(204, 204, 204);
+  border: 1px solid rgb(204, 204, 204);
 }
 
 .conference-img img {
@@ -178,6 +187,15 @@
   }
 
   .conference-img {
-    width: 90%;
+    width:100%;
+  }
+  .NeonatologyMainimage{
+    width: 100%;
+    position:relative;
+    padding-left: 4px;
+    
+  
+    /* display:; */
+    
   }
 }

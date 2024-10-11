@@ -7,6 +7,7 @@ import WelcomeMessage from "../Pediatrics-Neonatology-Conference/WelcomeMessage"
 import MediaPartners from "../Pediatric-Nutrition-Conference/mediaPartner";
 import Recommended from "../Pediatric-Nutrition-Conference/Recommended-conf";
 import Location3 from "./Location3";
+import { Link } from "react-router-dom";
 
 function Devlopment() {
   return (
@@ -31,18 +32,30 @@ function Devlopment() {
             <button className="infectious-btn infectious-register-now-btn">
               Go to Register Now
             </button>
-            <button className="infectious-btn infectious-download-brochure-btn">
-              Brochure Download
-            </button>
-            <button className="infectious-btn infectious-submit-abstract-btn">
-              Abstract Submission
-            </button>
-            <button className="infectious-btn infectious-tentative-program-btn">
-              Tentative Program
-            </button>
-            <button className="infectious-btn infectious-organizing-committee-btn">
-              Organizing Committee
-            </button>
+            <Link to="/DevlopmentBrochure">
+              <button className="infectious-btn infectious-download-brochure-btn">
+                Brochure Download
+              </button>
+            </Link>
+            <Link to="/DevlopmentAbstractTemplate">
+              <button className="infectious-btn infectious-submit-abstract-btn">
+                Abstract Submission
+              </button>
+            </Link>
+            <a
+              href="/Pediatrics-and-Neonatology-pdf.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <button className="infectious-btn infectious-tentative-program-btn">
+                Tentative Program
+              </button>
+            </a>
+            <Link to="/Org">
+              <button className="infectious-btn infectious-organizing-committee-btn">
+                Organizing Committee
+              </button>
+            </Link>
           </div>
         </header>
 

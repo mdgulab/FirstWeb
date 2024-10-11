@@ -70,7 +70,7 @@ function ConferencePage() {
               Conferences. Visit us in London, UK on August 25–26, 2025.
             </p>
           </div>
-          <div>
+          <div className="NeonatologyMainimage">
             <img
               className="conference-img"
               src="https://pediatricsmeets.com/wp-content/uploads/2024/09/Pediatrics-2025-1400x700.png"

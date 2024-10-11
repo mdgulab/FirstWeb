@@ -7,6 +7,7 @@ import WelcomeMessage from "../Pediatrics-Neonatology-Conference/WelcomeMessage"
 import MediaPartners from "../Pediatric-Nutrition-Conference/mediaPartner";
 import Recommended from "../Pediatric-Nutrition-Conference/Recommended-conf";
 import Location3 from "./Location3";
+import { Link } from "react-router-dom";
 
 function Infectious() {
   return (
@@ -31,18 +32,30 @@ function Infectious() {
             <button className="conference-btn register-now-btn">
               Go to Register Now
             </button>
-            <button className="conference-btn download-brochure-btn">
-              Brochure Download
-            </button>
-            <button className="conference-btn submit-abstract-btn">
-              Abstract Submission
-            </button>
-            <button className="conference-btn tentative-program-btn">
-              Tentative Program
-            </button>
-            <button className="conference-btn organizing-committee-btn">
-              Organizing Committee
-            </button>
+            <Link to="/InfectionContactForm">
+              <button className="conference-btn download-brochure-btn">
+                Brochure Download
+              </button>
+            </Link>
+            <Link to="/InfectionAbstractTemplate">
+              <button className="conference-btn submit-abstract-btn">
+                Abstract Submission
+              </button>
+            </Link>
+            <a
+              href="/Pediatrics-and-Neonatology-pdf.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <button className="conference-btn tentative-program-btn">
+                Tentative Program
+              </button>
+            </a>
+            <Link to="/Org">
+              <button className="conference-btn organizing-committee-btn">
+                Organizing Committee
+              </button>
+            </Link>
           </div>
         </header>
 

@@ -8,7 +8,7 @@ function TravelVisa() {
       <Header />
       <div className="img4">
         <div className="Visahead">
-          <h2>Travel Visa Process</h2>
+          <h2 className="Visah2">Travel Visa Process</h2>
         </div>
       </div>
 

@@ -9,7 +9,7 @@ const Contact = () => {
 
       <div className="contact-container1">
         <h2 className="contH2">Contact Us for Pediatrics Meets</h2>
-        <p>
+        <p className="Contact-sub-heading">
           To learn more about our conferences and events, please get in touch
           with us. Join our extensive network of scientists, professional
           experts, and research scholars to stay informed and connected.
@@ -18,20 +18,22 @@ const Contact = () => {
         <div className="contact-info">
           <div className="contact-item">
             <span className="icon">🎤</span>
-            <h3>Address</h3>
-            <p>16192 Coastal Highway Lewes, Delaware, USA 19958</p>
+            <h3 className="contH2">Address</h3>
+            <p className="Contact-sub-heading">
+              16192 Coastal Highway Lewes, Delaware, USA 19958
+            </p>
           </div>
 
           <div className="contact-item">
             <span className="icon">🎓</span>
-            <h3>Phone number</h3>
-            <p>+1 630 768 1199</p>
+            <h3 className="contH2">Phone number</h3>
+            <p className="Contact-sub-heading">+1 630 768 1199</p>
           </div>
 
           <div className="contact-item">
             <span className="icon">📧</span>
-            <h3>E-mail address</h3>
-            <p>support@stripeconferences.com</p>
+            <h3 className="contH2">E-mail address</h3>
+            <p className="Contact-sub-heading">support@stripeconferences.com</p>
           </div>
         </div>
       </div>

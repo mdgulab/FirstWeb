@@ -29,15 +29,16 @@ function Nutrition() {
 
           {/* Call to Action Buttons */}
           <div className="cta-buttons">
-            <Link to="/ContactForm">
+            <Link to="#">
               <button className="register-btn">Go to Register Now</button>
             </Link>
-            <Link to="/AbstractTemplate">
+
+            <Link to="/NutritionContactForm">
               <button className="brochure-btn">Brochure Download</button>
             </Link>
-
-            <button className="abstract-btn">Abstract Submission</button>
-
+            <Link to="/NutritionAbstractTemplate">
+              <button className="abstract-btn">Abstract Submission</button>
+            </Link>
             <a
               href="/Pediatrics-and-Neonatology-pdf.pdf"
               target="_blank"
@@ -98,16 +99,19 @@ function Nutrition() {
       <br />
       <center>
         <h2>Pediatric Nutrition Conference Scientific Sessions</h2>
-        <Second2 />
-        <WelcomeMessage />
-        <h2>Recommended Global Pediatrics Conferences </h2>
-        <Recommended />
-        <MediaPartners />
-
-        <Location />
-        <h4 className="conference-faq-title">FAQS</h4>
-        <FAQS />
       </center>
+      <Second2 />
+      <WelcomeMessage />
+      <center>
+        <h2>Recommended Global Pediatrics Conferences </h2>
+      </center>
+      <Recommended />
+      <MediaPartners />
+
+      <Location />
+      <h4 className="conference-faq-title">FAQS</h4>
+      <FAQS />
+
       <br />
       <Footer />
     </div>

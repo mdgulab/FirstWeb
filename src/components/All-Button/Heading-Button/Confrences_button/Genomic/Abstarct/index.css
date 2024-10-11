@@ -1,0 +1,153 @@
+/* Hero Section */
+.new-abst-template-hero-container {
+  position: relative;
+  height: 20rem;
+  background-image: url('https://img.pikbest.com/backgrounds/20200324/medical-technology-simple-banner-background_2754595.jpg!sw800');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+.new-abst-template-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  text-align: center;
+}
+
+.new-abst-template-text-container {
+  max-width: auto;
+  text-align: center;
+}
+
+.new-abst-template-heading {
+  text-align: center;
+  color: #007bff;
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+.new-abst-template-SubHeading {
+  text-align: center;
+  font-size: 20px;
+  padding-bottom: 20px;
+}
+
+.new-abst-template-sub-heading {
+  font-size: 26px;
+  margin-bottom: 20px;
+}
+
+.new-abst-template-download-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  color: white;
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.new-abst-template-download-button:hover {
+  background-color: #0056b3;
+}
+
+/* Main Content */
+.new-abst-template-main-content {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: 2rem 8rem;
+}
+
+.new-abst-template-form-container {
+  width: 50%;
+}
+
+.new-abst-template-form {
+  background: #f5f5f5;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.new-abst-template-label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.new-abst-template-input,
+.new-abst-template-select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.new-abst-template-button {
+  padding: 10px 15px;
+  font-size: 16px;
+  color: white;
+  background-color: #28a745;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.new-abst-template-button:hover {
+  background-color: #218838;
+}
+
+/* Forum Section */
+.new-abst-template-forum-section {
+  width: 30%;
+  margin-left: 40px;
+}
+
+.new-abst-template-forum-heading {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.new-abst-template-forum-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.new-abst-template-forum-card {
+  background: #e9ecef;
+  border-radius: 5px;
+  margin: 10px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  width: calc(50% - 20px);
+}
+
+.new-abst-template-icon {
+  font-size: 24px;
+  margin-right: 10px;
+}
+
+.new-abst-template-publications-link {
+  display: inline-block;
+  margin-top: 20px;
+  font-weight: bold;
+  color: #007bff;
+  text-decoration: none;
+}
+
+.new-abst-template-publications-link:hover {
+  text-decoration: underline;
+}

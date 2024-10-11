@@ -11,6 +11,9 @@
 .contH2 {
   color: rgb(231, 134, 6);
 }
+.Contact-sub-heading{
+  color: rgb(255, 255, 255);
+}
 
 .contact-container1::before {
   content: '';

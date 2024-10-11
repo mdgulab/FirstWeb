@@ -1,0 +1,254 @@
+/* Hero Section */
+.abst-template-updated-hero-container {
+  position: relative;
+  height: 20rem;
+  background-image: url('https://img.pikbest.com/backgrounds/20200324/medical-technology-simple-banner-background_2754595.jpg!sw800');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+.abst-template-updated-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  text-align: center;
+}
+
+.abst-template-updated-text-container {
+  max-width: auto;
+  text-align: center;
+}
+
+.abst-template-updated-heading {
+  text-align: center;
+  color: #007bff;
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.abst-template-updated-subheading {
+  text-align: center;
+  font-size: 20px;
+  padding-bottom: 20px;
+}
+
+.abst-template-updated-sub-heading {
+  font-size: 26px;
+  margin-bottom: 20px;
+}
+
+.abst-template-updated-download-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  color: white;
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.abst-template-updated-download-button:hover {
+  background-color: #0056b3;
+}
+
+/* Main Content */
+.abst-template-updated-main-content {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: 2rem 8rem;
+  background-color: #f9f9f9;
+  flex-wrap: wrap;
+}
+
+/* Form Section */
+.abst-template-updated-form-container {
+  flex: 1;
+  max-width: 500px;
+  margin-bottom: 20px;
+}
+
+.abst-template-updated-form {
+  background-color: rgb(244, 244, 244);
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.abst-template-updated-label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #333;
+}
+
+.abst-template-updated-input,
+.abst-template-updated-select {
+  padding: 10px;
+  margin: 5px 0 15px;
+  font-size: 16px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.abst-template-updated-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  color: white;
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.abst-template-updated-button:hover {
+  background-color: #0056b3;
+}
+
+/* Forum Section */
+.abst-template-updated-forum-section {
+  flex: 2;
+  max-width: 800px;
+  text-align: center;
+}
+
+.abst-template-updated-forum-heading {
+  font-size: 24px;
+  margin-bottom: 20px;
+  gap: 15px;
+}
+
+.abst-template-updated-forum-container {
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+  color: #0056b3;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 15px;
+  padding: 20px;
+}
+
+.abst-template-updated-forum-card {
+  background-color: rgb(252, 252, 252);
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.abst-template-updated-icon {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.abst-template-updated-forum-name {
+  font-size: 16px;
+  color: #333;
+}
+
+/* Publications Link */
+.abst-template-updated-publications-link {
+  margin-top: 20px;
+  font-size: 16px;
+  color: #007bff;
+  text-decoration: none;
+}
+
+.abst-template-updated-publications-link:hover {
+  text-decoration: underline;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .abst-template-updated-main-content {
+    flex-direction: column;
+    padding: 30px;
+  }
+
+  .abst-template-updated-hero-container {
+    height: 20rem;
+  }
+
+  .abst-template-updated-heading {
+    font-size: 28px;
+  }
+
+  .abst-template-updated-sub-heading {
+    font-size: 18px;
+  }
+
+  .abst-template-updated-download-button {
+    font-size: 14px;
+  }
+
+  .abst-template-updated-form {
+    padding: 20px;
+  }
+
+  .abst-template-updated-button {
+    font-size: 14px;
+  }
+
+  .abst-template-updated-forum-heading {
+    font-size: 20px;
+  }
+
+  .abst-template-updated-forum-name {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 1040px) {
+  .abst-template-updated-main-content {
+    flex-direction: column;
+    padding: 30px;
+  }
+
+  .abst-template-updated-hero-container {
+    height: 25rem;
+  }
+
+  .abst-template-updated-heading {
+    font-size: 28px;
+  }
+
+  .abst-template-updated-sub-heading {
+    font-size: 18px;
+  }
+
+  .abst-template-updated-download-button {
+    font-size: 14px;
+  }
+
+  .abst-template-updated-form {
+    padding: 20px;
+  }
+
+  .abst-template-updated-button {
+    font-size: 14px;
+  }
+
+  .abst-template-updated-forum-heading {
+    font-size: 20px;
+  }
+
+  .abst-template-updated-forum-name {
+    font-size: 14px;
+  }
+}

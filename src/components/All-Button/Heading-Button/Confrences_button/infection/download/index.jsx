@@ -1,12 +1,12 @@
 import { useState } from "react";
 import PhoneInput from "react-phone-input-2";
 import "react-phone-input-2/lib/style.css";
-import "./index.css"; // Import the external CSS file
-import Header from "../../../../Header/MainHeader/Header";
-import Footer from "../../../../Footer/Footer";
+import "/src/components/All-Button/Heading-Button/Confrences_button/Neonatology/download/index.css";
+import Header from "../../../../../Header/MainHeader/Header";
+import Footer from "../../../../../Footer/Footer";
 import { Placeholder } from "react-bootstrap";
 
-const ContactForm = () => {
+const InfectionContactForm = () => {
   // State to store form input values
   const [formData, setFormData] = useState({
     name: "",
@@ -42,7 +42,7 @@ const ContactForm = () => {
     <div className="ContactTop">
       <Header />
       <div className="ContactFormHead">
-        <h2>Pediatrics & Neonatology Brochure Download</h2>
+        <h2>Pediatric Infectious Diseases Brochure Download</h2>
         <div className="form-container">
           <form onSubmit={handleSubmit} className="contact-form">
             {/* Name field */}
@@ -103,4 +103,4 @@ const ContactForm = () => {
   );
 };
 
-export default ContactForm;
+export default InfectionContactForm;
