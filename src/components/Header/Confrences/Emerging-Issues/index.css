@@ -3,89 +3,126 @@
 /* General Page Wrapper */
 .conference-page-wrapper {
   padding: 20px;
-  font-family: Arial, sans-serif;
-  background-color: #f5f5f5;
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f8ff; /* Softer background for visual comfort */
 }
 
 /* Conference Header Section */
 .conference-header-section {
   text-align: center;
-  background-color: #4a90e2;
-  color: white;
   padding: 40px 20px;
+  background-image: url(https://img.freepik.com/premium-vector/light-blue-white-abstract-modern-banner-background-design-vector-graphic-pattern-template-illustration_249611-3271.jpg?w=826);
+  background-size: cover;
+  background-position: center;
+  color: #fff; /* Text contrast on background */
 }
 
 .conference-header-subtitle {
-  font-size: 24px;
-  font-weight: 400;
+  font-size: 22px;
+  color: #777;
 }
 
 .conference-header-title {
-  font-size: 36px;
-  font-weight: 700;
-  margin-top: 10px;
+  font-size: 40px;
+  color: #008cba;
+  margin: 10px 0;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2); /* Text shadow for clarity */
 }
 
 .conference-theme-highlight {
   font-size: 18px;
-  font-weight: 600;
-  margin-top: 10px;
+  font-weight: 500;
+  margin-bottom: 10px;
 }
 
 .conference-schedule-info {
   font-size: 16px;
-  font-weight: 400;
-  margin-top: 20px;
+  color: #555;
+  margin-bottom: 40px;
 }
 
 /* Call to Action Buttons */
 .conference-btn1 {
-  margin-top: 30px;
   display: flex;
   justify-content: center;
-  gap: 10px;
+  gap: 15px;
+  flex-wrap: wrap;
 }
 
 .conference-btn1 button {
-  background-color: #ff6b6b;
+  padding: 12px 20px;
+  font-size: 16px;
   color: white;
-  padding: 10px 20px;
   border: none;
-  border-radius: 5px;
-  font-size: 14px;
+  border-radius: 5px; /* Rounded buttons */
   cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow for buttons */
+}
+
+.register-button {
+  background-color: #003d80;
+}
+
+.download-brochure-button {
+  background-color: #28a745;
+}
+
+.submit-abstract-button {
+  background-color: #ffc107;
+}
+
+.tentative-program-button {
+  background-color: #17a2b8;
+}
+
+.organizing-committee-button {
+  background-color: #dc3545;
 }
 
 .conference-btn1 button:hover {
-  background-color: #ff4f4f;
+  background-color: #0043fce2;
+  transform: scale(1.05); /* Slight zoom on hover */
 }
 
 /* Conference Info Section */
 .conference-info-section {
   display: flex;
   justify-content: space-between;
-  margin-top: 40px;
+  margin-top: 50px;
+  flex-wrap: wrap;
 }
 
 .conference-details-content {
-  width: 60%;
+  flex: 1;
+  min-width: 300px;
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
 }
 
 .conference-info-title {
-  font-size: 28px;
-  font-weight: 700;
+  font-size: 24px;
   margin-bottom: 20px;
+  color: #0056b3; /* Highlighted titles */
 }
 
 .conference-info-text {
   font-size: 16px;
-  line-height: 1.6;
+  color: #555;
+  line-height: 1.7;
   margin-bottom: 20px;
 }
 
-.conference-banner-image img {
-  max-width: 100%;
-  height: auto;
+.conference-banner-image {
+  flex: 1;
+  margin-left: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+  max-width: 100%; /* Ensure image fits its container */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
 /* FAQ Section */
@@ -93,6 +130,7 @@
   text-align: center;
   font-size: 24px;
   margin: 40px 0;
+  color: #333;
 }
 
 /* Footer */
@@ -105,4 +143,62 @@ footer {
 
 footer p {
   margin: 0;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  /* Stack header text vertically */
+  .conference-header-section {
+    padding: 20px;
+  }
+
+  .conference-header-title {
+    font-size: 32px;
+  }
+
+  .conference-theme-highlight, .conference-schedule-info {
+    font-size: 14px;
+  }
+
+  /* Adjust button sizes */
+  .conference-btn1 button {
+    font-size: 14px;
+    padding: 10px 15px;
+  }
+
+  /* Stack content for smaller screens */
+  .conference-info-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .conference-details-content, .conference-banner-image {
+    width: 100%;
+    margin: 0 0 20px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Further text adjustments */
+  .conference-header-title {
+    font-size: 24px;
+  }
+
+  .conference-header-subtitle, .conference-theme-highlight {
+    font-size: 16px;
+  }
+
+  /* Button adjustments */
+  .conference-btn1 button {
+    font-size: 12px;
+    padding: 8px 12px;
+  }
+
+  .conference-info-title {
+    font-size: 20px;
+  }
+
+  .conference-info-text {
+    font-size: 14px;
+  }
 }

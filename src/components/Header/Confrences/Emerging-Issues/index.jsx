@@ -35,7 +35,7 @@ function Emerging() {
             <button className="download-brochure-button">
               Brochure Download
             </button>
-            <button className=" submit-abstract-button">
+            <button className="submit-abstract-button">
               Abstract Submission
             </button>
             <button className="tentative-program-button">

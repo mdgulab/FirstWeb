@@ -26,6 +26,7 @@ import GenomicAbstractTemplate from "./components/All-Button/Heading-Button/Conf
 import GenomicContactForm from "./components/All-Button/Heading-Button/Confrences_button/Genomic/download/index.jsx";
 import DevlopmentAbstractTemplate from "./components/All-Button/Heading-Button/Confrences_button/devlopment/Abstarct/index.jsx";
 import DevlopmentBrochure from "./components/All-Button/Heading-Button/Confrences_button/devlopment/download/index.jsx";
+import AllScintificSession1 from "./components/All-Button/Heading-Button/Confrences_button/Neonatology/View All Scintific Session/index.jsx";
 function App() {
   return (
     <Router>
@@ -78,6 +79,10 @@ function App() {
         <Route
           path="/DevlopmentBrochure"
           element={<DevlopmentBrochure />}
+        ></Route>
+        <Route
+          path="/AllScintificSession1"
+          element={<AllScintificSession1 />}
         ></Route>
         <Route index element={<HomePage />}></Route>
       </Routes>

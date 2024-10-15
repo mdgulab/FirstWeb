@@ -1,22 +1,24 @@
-import React, { useState } from "react";
-import "./Groundpart.css";
-import { Link } from "react-router-dom";
+import { useState } from "react";
+import "./index.css";
 
 // Accordion component
 const AccordionItem = ({ title, content }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="accordion-item">
-      <button className="accordion-title" onClick={() => setIsOpen(!isOpen)}>
+    <div className="accordion-item-new">
+      <button
+        className="accordion-header-new"
+        onClick={() => setIsOpen(!isOpen)}
+      >
         {isOpen ? "▼ " : "► "} {title}
       </button>
-      {isOpen && <div className="accordion-content">{content}</div>}
+      {isOpen && <div className="accordion-body-new">{content}</div>}
     </div>
   );
 };
 
-function GroundPart() {
+function AllScintificSession1() {
   // Left column content
   const leftItems = [
     {
@@ -52,7 +54,7 @@ function GroundPart() {
     {
       title: "Pediatric Nursing​",
       content:
-        " Pediatric nursing is the specialized care of infants, children, and adolescents by trained nurses. They  assist with everything from routine check-ups and vaccinations to caring for children with chronic illnesses or those recovering from surgery. Pediatric nurses play a key role in educating families about health issues, managing medications, and providing comfort to young patients.",
+        " Pediatric nursing is the specialized care of infants, children, and adolescents by trained nurses. They assist with everything from routine check-ups and vaccinations to caring for children with chronic illnesses or those recovering from surgery. Pediatric nurses play a key role in educating families about health issues, managing medications, and providing comfort to young patients.",
     },
     {
       title: "Pediatric Cardiology​",
@@ -70,7 +72,7 @@ function GroundPart() {
         "Pediatric nutrition ensures that children get the balanced nutrients they need to grow and stay healthy. Neonatal nutrition specifically addresses the needs of newborns, especially those who are premature or have special conditions. Baby food, introduced around six months of age, includes pureed fruits, vegetables, and cereals, designed to be easy for babies to eat.",
     },
     {
-      title: " Genetic and Metabolic Disorders in Pediatrics and Neonatology​",
+      title: "Genetic and Metabolic Disorders in Pediatrics and Neonatology​",
       content:
         "Genetic disorders are caused by abnormalities in the child’s DNA and can lead to conditions like cystic fibrosis or Down syndrome. Metabolic disorders affect how the body breaks down and uses food, leading to conditions such as phenylketonuria (PKU) or galactosemia.",
     },
@@ -96,7 +98,7 @@ function GroundPart() {
     {
       title: "Pediatric Surgery",
       content:
-        "Pediatric surgery is a branch of medicine that deals with performing surgeries on babies, children, and teenagers. Pediatric surgeons are doctors who specialize in operating on young patients to treat conditions like congenital defects, injuries, or diseases.  Pediatric surgery aims to help children recover from their conditions, improve their quality of life, and support their healthy development.",
+        "Pediatric surgery is a branch of medicine that deals with performing surgeries on babies, children, and teenagers. Pediatric surgeons are doctors who specialize in operating on young patients to treat conditions like congenital defects, injuries, or diseases. Pediatric surgery aims to help children recover from their conditions, improve their quality of life, and support their healthy development.",
     },
     {
       title: "Pediatric Urology & Nephrology",
@@ -121,7 +123,7 @@ function GroundPart() {
     {
       title: "Child and Adolescent Behavioral Health​",
       content:
-        " Child and adolescent behavioral health focuses on the mental and emotional well-being of children and teenagers. Specialists in this field work with children, adolescents, and their families to diagnose, treat, and manage these conditions through therapy, counseling, medication, and other supportive strategies.",
+        "Child and adolescent behavioral health focuses on the mental and emotional well-being of children and teenagers. Specialists in this field work with children, adolescents, and their families to diagnose, treat, and manage these conditions through therapy, counseling, medication, and other supportive strategies.",
     },
     {
       title: "Maternal and Child Care​",
@@ -136,55 +138,37 @@ function GroundPart() {
     {
       title: "Clinical Trials and Case Reports in Pediatrics​",
       content:
-        "Clinical trials and case reports are essential tools in pediatric medicine for advancing knowledge and improving care for children. Clinical trials are research studies conducted to evaluate the safety and effectiveness of new treatments, medications, or interventions in children. Case reports are detailed descriptions of individual pediatric cases, often highlighting rare or unusual conditions. They provide valuable insights by documenting how specific cases are diagnosed and treated, offering lessons that can be applied in similar situations. ",
-    },
-
-    {
-      title: "Neonatal Brain Development​",
-      content:
-        "Neonatal brain development refers to the growth and maturation of a baby’s brain during the first few weeks and months of life. This period is crucial as the brain undergoes rapid development, forming the basic structures and connections needed for future learning, behavior, and cognitive functions.",
+        "Clinical trials and case reports are essential tools in pediatric medicine for advancing knowledge and improving care for children. Clinical trials are research studies conducted to evaluate the safety and effectiveness of new treatments, medications, or interventions in children. Case reports are detailed descriptions of individual pediatric cases, often highlighting rare or unusual conditions, treatment approaches, and outcomes.",
     },
     {
-      title: "Future of Pediatric Healthcare​",
+      title: "Women Healthcare Nursing​",
       content:
-        "The future of pediatric healthcare is poised to be shaped by advancements in technology, personalized medicine, and a focus on preventive care. Innovations like telemedicine will make it easier for families to access specialized care and consult with experts remotely.",
+        "Women’s healthcare nursing focuses on providing specialized care for women throughout their lifespan, from adolescence through pregnancy, childbirth, menopause, and beyond. Women’s healthcare nurses play a key role in supporting reproductive health, addressing gynecological issues, offering prenatal and postnatal care, and promoting overall well-being for women at all stages of life.",
     },
   ];
-  return (
-    <div>
-      <div className="App">
-        <h1 className="main-title">
-          Pediatrics Conferences Scientific Sessions
-        </h1>
-        <div className="ground-part">
-          <div className="column left">
-            {leftItems.map((item, index) => (
-              <AccordionItem
-                key={index}
-                title={item.title}
-                content={item.content}
-              />
-            ))}
-          </div>
-          <div className="column right">
-            {rightItems.map((item, index) => (
-              <AccordionItem
-                key={index}
-                title={item.title}
-                content={item.content}
-              />
-            ))}
-          </div>
-        </div>
-      </div>
 
-      <center>
-        <Link to="/AllScintificSession1">
-          <button className="bottom-button2">View All Scintific Session</button>
-        </Link>
-      </center>
+  return (
+    <div className="container-new">
+      <div className="column-new">
+        {leftItems.map((item, index) => (
+          <AccordionItem
+            key={index}
+            title={item.title}
+            content={item.content}
+          />
+        ))}
+      </div>
+      <div className="column-new">
+        {rightItems.map((item, index) => (
+          <AccordionItem
+            key={index}
+            title={item.title}
+            content={item.content}
+          />
+        ))}
+      </div>
     </div>
   );
 }
 
-export default GroundPart;
+export default AllScintificSession1;
